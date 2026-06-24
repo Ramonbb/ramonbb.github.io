@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact details for Ramón Barrera-Barrera.">
+  <title>Contact - Research Portal Ramón Barrera-Barrera</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="contact">
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Primary navigation" data-i18n-aria-label="aria.primaryNavigation">
+      <a class="brand" href="index.html" aria-label="Research Portal home" data-i18n-aria-label="aria.portalHome"><span class="brand-mark">RB</span><span data-i18n="brand.name">Research Portal</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a href="publications.html" data-i18n="nav.publications">Publications</a></li>
+        <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="appendices.html" data-i18n="nav.appendices">Interactive Appendices</a></li>
+        <li><a href="teaching.html" data-i18n="nav.teaching">Teaching</a></li>
+        <li><a class="active" href="contact.html" data-i18n="nav.contact">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <div class="language-selector" role="group" aria-label="Language selector" data-i18n-aria-label="aria.languageSelector">
+          <button class="language-button active" type="button" data-language="en" aria-label="Switch to English" data-i18n-aria-label="aria.switchEnglish" aria-pressed="true">EN</button>
+          <button class="language-button" type="button" data-language="es" aria-label="Switch to Spanish" data-i18n-aria-label="aria.switchSpanish" aria-pressed="false">ES</button>
+        </div>
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" data-i18n-aria-label="aria.openMenu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Get in Touch</p>
+        <h1 data-i18n="contact.title">Contact</h1>
+        <p data-i18n="contact.intro">Professional profile, institutional information, academic links, and a frontend-only contact form.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <article class="contact-card">
+          <h2 data-i18n="contact.profileTitle">Professional Profile</h2>
+          <p data-i18n="contact.profileText">Ramón Barrera-Barrera is a professor and researcher in Tourism and Marketing, with research interests in service quality, customer experience, online reviews, text mining, and sentiment analysis.</p>
+          <ul class="contact-list">
+            <li><strong data-i18n="contact.affiliationLabel">University affiliation:</strong> <span data-i18n="contact.affiliationPlaceholder">University affiliation placeholder</span></li>
+            <li><strong data-i18n="contact.emailLabel">Email:</strong> email@example.edu</li>
+            <li><strong>Google Scholar:</strong> <a href="#" data-i18n="contact.profilePlaceholder">Profile placeholder</a></li>
+            <li><strong>ORCID:</strong> <a href="#" data-i18n="contact.orcidPlaceholder">ORCID placeholder</a></li>
+            <li><strong>ResearchGate:</strong> <a href="#" data-i18n="contact.researchGatePlaceholder">ResearchGate placeholder</a></li>
+            <li><strong>LinkedIn:</strong> <a href="#" data-i18n="contact.linkedInPlaceholder">LinkedIn placeholder</a></li>
+          </ul>
+        </article>
+
+        <form class="contact-form" id="contact-form">
+          <h2 data-i18n="contact.formTitle">Contact Form</h2>
+          <p class="form-note" data-i18n="contact.formNote">This form is frontend only. Connect it to a form service or mail endpoint before production use.</p>
+          <label for="name" data-i18n="contact.name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Your name" data-i18n-placeholder="contact.namePlaceholder" required>
+
+          <label for="email" data-i18n="contact.emailLabel">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="your.email@example.edu" data-i18n-placeholder="contact.emailPlaceholder" required>
+
+          <label for="subject" data-i18n="contact.subject">Subject</label>
+          <input id="subject" name="subject" type="text" placeholder="Research enquiry" data-i18n-placeholder="contact.subjectPlaceholder" required>
+
+          <label for="message" data-i18n="contact.message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Write your message" data-i18n-placeholder="contact.messagePlaceholder" required></textarea>
+
+          <button class="button primary" type="submit" data-i18n="contact.send">Send Message</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="current-year"></span> Ramón Barrera-Barrera. <span data-i18n="footer.rights">All rights reserved.</span></p>
+      <div class="footer-links"><a href="#">GitHub</a><a href="#">Google Scholar</a><a href="#">ORCID</a></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
