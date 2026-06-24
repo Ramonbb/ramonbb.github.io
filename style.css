@@ -195,7 +195,7 @@ img {
   /* The local image and overlay are scoped to the full homepage hero only. */
   background:
     linear-gradient(rgba(15, 29, 43, 0.66), rgba(15, 29, 43, 0.58)),
-    url("images/hero");
+    url("images/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
