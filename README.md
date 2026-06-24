@@ -4,7 +4,10 @@ Static bilingual academic website for a university professor and researcher spec
 
 ## Website Structure
 
-- `index.html` - Home page with biography, research interests, methods, featured publications, and projects.
+- `index.html` - Temporary development landing page.
+- `index-full.html` - Full bilingual academic homepage preview.
+- `images/hero.jpg` - Local full-width homepage hero background.
+- `images/profile.jpg` - Replaceable local profile portrait placeholder.
 - `publications.html` - Filterable publications with bilingual abstracts and interface controls.
 - `projects.html` - Research projects with descriptions, methods, findings, and related publications.
 - `appendices.html` - Interactive appendix and research-resource cards.
@@ -30,6 +33,8 @@ Publication titles, author names, journal names, DOI references, project names, 
 ## How to Edit Content
 
 Edit the relevant HTML page and update both language entries in `script.js`. Translatable elements use translation keys:
+
+Replace `images/profile.jpg` with the researcher's official portrait when available, keeping the same filename so no HTML or CSS changes are required.
 
 ```html
 <h1 data-i18n="publications.title">Publications</h1>
