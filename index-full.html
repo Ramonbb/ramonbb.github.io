@@ -13,12 +13,12 @@
 <body data-page="home">
   <header class="site-header">
     <nav class="navbar container" aria-label="Primary navigation" data-i18n-aria-label="aria.primaryNavigation">
-      <a class="brand" href="index.html" aria-label="Research Portal home" data-i18n-aria-label="aria.portalHome">
+      <a class="brand" href="index-full.html" aria-label="Research Portal home" data-i18n-aria-label="aria.portalHome">
         <span class="brand-mark">RB</span>
         <span data-i18n="brand.name">Research Portal</span>
       </a>
       <ul class="nav-links">
-        <li><a class="active" href="index.html" data-i18n="nav.home">Home</a></li>
+        <li><a class="active" href="index-full.html" data-i18n="nav.home">Home</a></li>
         <li><a href="publications.html" data-i18n="nav.publications">Publications</a></li>
         <li><a href="projects.html" data-i18n="nav.projects">Projects</a></li>
         <li><a href="appendices.html" data-i18n="nav.appendices">Interactive Appendices</a></li>
@@ -37,30 +37,21 @@
 
   <main>
     <section class="hero academic-hero">
-      <div class="container hero-grid">
-        <div class="hero-copy">
+      <div class="container identity-hero-grid">
+        <div class="hero-copy identity-copy">
           <p class="eyebrow" data-i18n="home.eyebrow">University Professor and Researcher</p>
-          <h1 data-i18n="home.title">Research Portal – Ramón Barrera-Barrera</h1>
+          <h1>Ramón Barrera-Barrera</h1>
+          <p class="hero-affiliation">Universidad de Sevilla – España</p>
           <p class="subtitle" data-i18n="home.subtitle">Professor of Tourism and Marketing | Research in Service Quality, Tourism Experiences, Online Reviews, Text Mining and Sentiment Analysis</p>
           <div class="hero-actions" aria-label="Primary actions" data-i18n-aria-label="aria.primaryActions">
-            <a class="button primary" href="publications.html" data-i18n="home.viewPublications">View Publications</a>
-            <a class="button secondary" href="projects.html" data-i18n="home.exploreProjects">Explore Projects</a>
+            <a class="button primary" href="publications.html" data-i18n="home.viewPublications">View publications</a>
+            <a class="button secondary" href="projects.html" data-i18n="home.exploreProjects">Explore projects</a>
           </div>
         </div>
-        <aside class="hero-panel" aria-label="Research profile highlights" data-i18n-aria-label="aria.researchHighlights">
-          <div>
-            <span class="metric" data-i18n="home.highlightTourismTitle">Tourism</span>
-            <p data-i18n="home.highlightTourismText">Digital consumer behavior, destination experiences, and service quality.</p>
-          </div>
-          <div>
-            <span class="metric" data-i18n="home.highlightMarketingTitle">Marketing</span>
-            <p data-i18n="home.highlightMarketingText">Customer experience, online reviews, and data-informed decision making.</p>
-          </div>
-          <div>
-            <span class="metric" data-i18n="home.highlightMethodsTitle">Methods</span>
-            <p data-i18n="home.highlightMethodsText">Text mining, sentiment analysis, topic modeling, and quantitative analysis.</p>
-          </div>
-        </aside>
+        <figure class="profile-photo-frame">
+          <!-- Replace images/profile.jpg with the researcher's official portrait when available. -->
+          <img src="images/profile.jpg" alt="Professional profile portrait placeholder" data-i18n-alt="home.profileAlt">
+        </figure>
       </div>
     </section>
 
@@ -68,11 +59,11 @@
       <div class="container split-layout">
         <div>
           <p class="eyebrow" data-i18n="home.biographyEyebrow">Biography</p>
-          <h2 data-i18n="home.profileTitle">Academic Profile</h2>
+          <h2 data-i18n="home.profileTitle">Academic profile</h2>
         </div>
         <div class="prose">
-          <p data-i18n="home.biographyOne">Ramón Barrera-Barrera is a university professor and researcher specializing in Tourism and Marketing. His research examines how consumers evaluate tourism services, how online reviews shape destination and hospitality decisions, and how advanced quantitative and text-analysis methods can support tourism management.</p>
-          <p data-i18n="home.biographyTwo">This portal brings together publications, research projects, teaching activities, and interactive appendices designed to make research outputs transparent, reusable, and easy to explore.</p>
+          <p data-i18n="home.biographyOne">Ramón Barrera-Barrera is a university professor and researcher specializing in Tourism and Marketing. His research examines how consumers evaluate tourism services, how online reviews influence decisions about destinations and accommodation, and how advanced quantitative and textual analysis methods can contribute to tourism management.</p>
+          <p data-i18n="home.biographyTwo">This portal brings together publications, research projects, teaching activities, and interactive appendices designed to make research findings transparent, reusable, and easy to explore.</p>
         </div>
       </div>
     </section>
@@ -80,21 +71,19 @@
     <section class="section surface">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="home.researchFocus">Research Focus</p>
-          <h2 data-i18n="home.interestsTitle">Research Interests</h2>
+          <p class="eyebrow" data-i18n="home.researchFocus">Research focus</p>
+          <h2 data-i18n="home.interestsTitle">Research areas</h2>
         </div>
         <div class="tag-grid" aria-label="Research interests" data-i18n-aria-label="aria.researchInterests">
-          <span data-i18n="interests.tourismManagement">Tourism Management</span>
-          <span data-i18n="interests.tourismMarketing">Tourism Marketing</span>
+          <span data-i18n="home.areaTourism">Tourism</span>
+          <span data-i18n="home.areaMarketing">Marketing</span>
           <span data-i18n="interests.serviceQuality">Service Quality</span>
-          <span data-i18n="interests.customerExperience">Customer Experience</span>
+          <span data-i18n="home.areaTouristExperiences">Tourist Experiences</span>
           <span data-i18n="interests.onlineReviews">Online Reviews</span>
-          <span data-i18n="interests.ugc">User-Generated Content</span>
           <span data-i18n="interests.textMining">Text Mining</span>
-          <span data-i18n="interests.topicModeling">Topic Modeling</span>
           <span data-i18n="interests.sentimentAnalysis">Sentiment Analysis</span>
-          <span data-i18n="interests.heritageTourism">Heritage Tourism</span>
-          <span data-i18n="interests.cruiseTourism">Cruise Tourism</span>
+          <span data-i18n="interests.topicModeling">Topic Modeling</span>
+          <span data-i18n="home.areaConsumerBehavior">Consumer Behavior</span>
         </div>
       </div>
     </section>
@@ -102,79 +91,60 @@
     <section class="section">
       <div class="container">
         <div class="section-heading">
-          <p class="eyebrow" data-i18n="home.toolkit">Analytical Toolkit</p>
-          <h2 data-i18n="home.methodsTitle">Research Methods</h2>
+          <p class="eyebrow" data-i18n="home.academicPresence">Academic presence</p>
+          <h2 data-i18n="home.academicLinksTitle">Academic links</h2>
         </div>
-        <div class="method-grid">
-          <article class="info-card">
-            <h3 data-i18n="home.methodTextTitle">Text and Language Analytics</h3>
-            <p data-i18n="home.methodTextDescription">LDA Topic Modeling, Sentiment Analysis, and Text Mining for extracting themes and opinions from user-generated content.</p>
-          </article>
-          <article class="info-card">
-            <h3 data-i18n="home.methodSegmentationTitle">Segmentation and Classification</h3>
-            <p data-i18n="home.methodSegmentationDescription">CHAID and Cluster Analysis for identifying meaningful visitor, resident, and consumer segments.</p>
-          </article>
-          <article class="info-card">
-            <h3 data-i18n="home.methodQuantitativeTitle">Quantitative Modeling</h3>
-            <p data-i18n="home.methodQuantitativeDescription">Structural Equation Modeling and Quantitative Research Methods for theory testing and empirical validation.</p>
-          </article>
+        <div class="academic-links-grid">
+          <a class="academic-link-card" href="https://prisma.us.es/investigador/328" target="_blank" rel="noopener noreferrer">
+            <span><strong>PRISMA</strong><small data-i18n="home.prismaDescription">Institutional profile</small></span>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="academic-link-card" href="https://orcid.org/0000-0002-7014-4611" target="_blank" rel="noopener noreferrer">
+            <span><strong>ORCID</strong><small data-i18n="home.orcidDescription">Researcher identifier</small></span>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="academic-link-card" href="https://scholar.google.es/citations?user=91yAEjAAAAAJ" target="_blank" rel="noopener noreferrer">
+            <span><strong>Google Scholar</strong><small data-i18n="home.scholarDescription">Publications and citations</small></span>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="academic-link-card" href="https://idus.us.es/author-profiles/328" target="_blank" rel="noopener noreferrer">
+            <span><strong>IDUS</strong><small data-i18n="home.idusDescription">Author profile</small></span>
+            <span class="external-arrow" aria-hidden="true">↗</span>
+          </a>
         </div>
       </div>
     </section>
 
-    <section class="section surface">
+    <section class="section surface compact-overview">
       <div class="container">
-        <div class="section-heading with-action">
-          <div>
-            <p class="eyebrow" data-i18n="home.selectedWork">Selected Work</p>
-            <h2 data-i18n="home.featuredPublications">Featured Publications</h2>
-          </div>
-          <a class="text-link" href="publications.html" data-i18n="home.allPublications">All publications</a>
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="home.portalOverview">Research portal</p>
+          <h2 data-i18n="home.exploreResearch">Explore the research</h2>
         </div>
-        <div class="card-grid">
-          <article class="publication-card">
-            <p class="card-meta">Tourism Management | 2025</p>
+        <div class="homepage-overview-grid">
+          <article class="overview-column">
+            <div class="overview-heading">
+              <h3 data-i18n="home.recentPublications">Recent publications</h3>
+              <a href="publications.html" aria-label="View all publications" data-i18n-aria-label="home.viewAllPublicationsAria">↗</a>
+            </div>
             <h3>Online Reviews and the Formation of Tourism Experience Quality</h3>
             <p data-i18n="home.featuredPublicationOne">Placeholder publication exploring how review narratives reveal dimensions of perceived experience quality.</p>
-            <a class="text-link" href="publications.html" data-i18n="common.readMore">Read more</a>
           </article>
-          <article class="publication-card">
-            <p class="card-meta">Journal of Travel Research | 2024</p>
-            <h3>Sentiment and Topic Modeling in Cruise Tourism Reviews</h3>
-            <p data-i18n="home.featuredPublicationTwo">Placeholder publication using computational text analysis to identify service attributes in cruise experiences.</p>
-            <a class="text-link" href="publications.html" data-i18n="common.readMore">Read more</a>
-          </article>
-          <article class="publication-card">
-            <p class="card-meta">Service Industries Journal | 2023</p>
-            <h3>Service Quality Drivers in Digital Tourism Platforms</h3>
-            <p data-i18n="home.featuredPublicationThree">Placeholder publication examining quality perceptions across online hospitality and travel platforms.</p>
-            <a class="text-link" href="publications.html" data-i18n="common.readMore">Read more</a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <div class="section-heading with-action">
-          <div>
-            <p class="eyebrow" data-i18n="home.researchPortfolio">Research Portfolio</p>
-            <h2 data-i18n="home.featuredProjects">Featured Projects</h2>
-          </div>
-          <a class="text-link" href="projects.html" data-i18n="home.allProjects">All projects</a>
-        </div>
-        <div class="card-grid">
-          <article class="project-card">
+          <article class="overview-column">
+            <div class="overview-heading">
+              <h3 data-i18n="home.featuredProjects">Featured projects</h3>
+              <a href="projects.html" aria-label="View all projects" data-i18n-aria-label="home.viewAllProjectsAria">↗</a>
+            </div>
             <h3>Cruise Tourism Research</h3>
             <p data-i18n="home.featuredProjectOne">Analysis of cruise passenger reviews to understand satisfaction, service quality, and destination experience.</p>
           </article>
-          <article class="project-card">
-            <h3>Urban Destination Attractiveness</h3>
-            <p data-i18n="home.featuredProjectTwo">Study of visitor-generated content to identify the perceived strengths of urban tourism destinations.</p>
-          </article>
-          <article class="project-card">
-            <h3>Heritage Hotels and Paradores</h3>
-            <p data-i18n="home.featuredProjectThree">Research on heritage accommodation experiences, authenticity, service performance, and guest value.</p>
+          <article class="overview-column">
+            <div class="overview-heading">
+              <h3 data-i18n="home.interactiveResources">Interactive research resources</h3>
+              <a href="appendices.html" aria-label="View interactive research resources" data-i18n-aria-label="home.viewResourcesAria">↗</a>
+            </div>
+            <h3 data-i18n="home.resourceCardTitle">Review datasets and appendices</h3>
+            <p data-i18n="home.resourceCardDescription">Explore reusable datasets, visual summaries, and supporting materials for tourism and service research.</p>
           </article>
         </div>
       </div>
