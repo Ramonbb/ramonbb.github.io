@@ -192,13 +192,15 @@ img {
 }
 
 .academic-hero {
-  /* The local image and overlay are scoped to the full homepage hero only. */
+  /* The local image continues behind both the identity and biography blocks. */
   background:
-    linear-gradient(rgba(15, 29, 43, 0.66), rgba(15, 29, 43, 0.58)),
+    linear-gradient(rgba(15, 29, 43, 0.68), rgba(15, 29, 43, 0.60)),
     url("images/hero.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  padding-top: 120px;
+  padding-bottom: 180px;
 }
 
 .hero-grid {
@@ -363,6 +365,27 @@ img {
 .prose p {
   margin-top: 0;
   color: var(--ink-soft);
+}
+
+.biography-overlay {
+  margin-top: 80px;
+  color: #fff;
+}
+
+.biography-overlay h2 {
+  margin: 0;
+  color: #fff;
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  line-height: 1.1;
+}
+
+.biography-overlay p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.biography-overlay .eyebrow {
+  color: #ffd27a;
 }
 
 .tag-grid {
@@ -807,6 +830,16 @@ a:focus-visible {
   .section,
   .page-hero {
     padding: 48px 0;
+  }
+
+  .academic-hero {
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+
+  .biography-overlay {
+    margin-top: 56px;
+    text-align: left;
   }
 
   .method-grid,
