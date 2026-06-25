@@ -1237,7 +1237,7 @@ a:focus-visible {
     padding-top: 42px;
     padding-bottom: 48px;
     background:
-      linear-gradient(rgba(250, 252, 253, 0.90), rgba(250, 252, 253, 0.78)),
+       linear-gradient(90deg,rgba(255,255,255,0.55) 0%,rgba(255,255,255,0.35) 35%,rgba(255,255,255,0.10) 55%,rgba(255,255,255,0.00) 100%),
       url("images/hero.png?homepage=2");
     background-size: cover;
     background-position: center;
