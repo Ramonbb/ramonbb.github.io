@@ -62,7 +62,7 @@ const translations = {
       eyebrow: "University Professor and Researcher",
       title: "Research Portal – Ramón Barrera-Barrera",
       subtitle: "Professor of Tourism and Marketing | Research in Service Quality, Tourism Experiences, Online Reviews, Text Mining and Sentiment Analysis",
-      profileAlt: "Professional profile portrait placeholder",
+      profileAlt: "Professional portrait of Ramón Barrera Barrera",
       viewPublications: "View publications",
       exploreProjects: "Explore projects",
       highlightTourismTitle: "Tourism",
@@ -274,7 +274,7 @@ const translations = {
       eyebrow: "Profesor Universitario e Investigador",
       title: "Portal de Investigación – Ramón Barrera-Barrera",
       subtitle: "Profesor de Turismo y Marketing | Investigación en Calidad del Servicio, Experiencias Turísticas, Reseñas en Línea, Minería de Textos y Análisis de Sentimientos",
-      profileAlt: "Marcador de retrato profesional",
+      profileAlt: "Retrato profesional de Ramón Barrera Barrera",
       viewPublications: "Ver publicaciones",
       exploreProjects: "Explorar proyectos",
       highlightTourismTitle: "Turismo",
@@ -429,12 +429,12 @@ const translations = {
 const pageMetadata = {
   home: {
     en: {
-      title: "Research Portal – Ramón Barrera-Barrera",
-      description: "Research Portal for Ramón Barrera-Barrera, Professor of Tourism and Marketing."
+      title: "Research Portal – Ramón Barrera Barrera",
+      description: "Research Portal for Ramón Barrera Barrera, Professor of Tourism and Marketing."
     },
     es: {
-      title: "Portal de Investigación – Ramón Barrera-Barrera",
-      description: "Portal de investigación de Ramón Barrera-Barrera, profesor de Turismo y Marketing."
+      title: "Portal de Investigación – Ramón Barrera Barrera",
+      description: "Portal de investigación de Ramón Barrera Barrera, profesor de Turismo y Marketing."
     }
   },
   publications: {
