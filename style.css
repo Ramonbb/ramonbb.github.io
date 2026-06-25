@@ -200,7 +200,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
   min-height: 110vh;
-  padding: clamp(90px, 12vh, 150px);
+  padding: clamp(58px, 7vh, 90px) 0 52px;
   color: var(--ink);
 }
 
