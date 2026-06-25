@@ -1,23 +1,68 @@
-{
-"title":"title...",
+[
+  {
+    "id": "ijtc-2026-001",
 
-"journal":"journal...",
+    "featured": true,
+    "visible": true,
 
-"year":2026,
+    "title": "A Text-Mining Framework for Measuring Urban Destination Attractiveness",
 
-"doi":"...",
+    "authors": [
+      "Ramón Barrera-Barrera"
+    ],
 
-"authors":"rbb...",
+    "journal": "International Journal of Tourism Cities",
 
-"keywords":[..rbb.],
+    "journalBadge": "IJTC",
 
-"abstract": ".hola..",
+    "year": 2026,
 
-"featured":true,
+    "publishedOnline": "2026-03-11",
 
-"resources":[
-"LDA",
-"Sentiment Analysis",
-"CHAID"
+    "doi": "10.1080/20565607.2026.2639343",
+
+    "doiUrl": "https://doi.org/10.1080/20565607.2026.2639343",
+
+    "type": {
+      "en": "Review Article",
+      "es": "Artículo de revisión"
+    },
+
+    "status": {
+      "en": "Published",
+      "es": "Publicado"
+    },
+
+    "categories": [
+      "tourism",
+      "text-mining"
+    ],
+
+    "tags": {
+      "en": [
+        "Destination attractiveness",
+        "Tourist online reviews",
+        "Urban tourism",
+        "Text-mining analysis"
+      ],
+      "es": [
+        "Atractivo del destino",
+        "Reseñas turísticas en línea",
+        "Turismo urbano",
+        "Análisis de minería de textos"
+      ]
+    },
+
+    "abstract": {
+      "en": "Enhancing the visitor experience requires understanding how tourists perceive the factors shaping destination attractiveness. This study addresses this need through a data-driven methodology grounded in text-mining techniques, allowing for the identification of key destination attributes and their contribution to overall destination appeal. To this end, 115,128 English-language reviews (2013–2024) from Barcelona’s five most-visited attractions were analysed using Latent Dirichlet Allocation (LDA) topic modelling and sentiment analysis. Results show that the city’s architectural heritage and key supporting services – such as dining and retail activities and guided tours – significantly enhanced destination attractiveness. By contrast, negative evaluations of urban mobility, ticketing services, and the urban atmosphere weakened visitors’ overall impressions of the destination. The adoption of text-mining research methodologies also helps overcome several limitations commonly associated with traditional approaches based on structured questionnaires and consumer surveys. Practical implications help destination managers enhance competitiveness by reinforcing valued attributes and correcting negatively perceived aspects.",
+
+      "es": "La mejora de la experiencia del visitante requiere comprender cómo los turistas perciben los factores que configuran el atractivo de un destino. Este estudio responde a esta necesidad mediante una metodología basada en datos y fundamentada en técnicas de minería de textos, que permite identificar los principales atributos del destino y su contribución al atractivo global del mismo. Para ello, se analizaron 115.128 reseñas en inglés (2013–2024) correspondientes a las cinco atracciones más visitadas de Barcelona mediante modelado de temas con Latent Dirichlet Allocation (LDA) y análisis de sentimientos. Los resultados muestran que el patrimonio arquitectónico de la ciudad y determinados servicios complementarios, como la restauración, el comercio y las visitas guiadas, contribuyen significativamente al atractivo del destino. Por el contrario, las valoraciones negativas sobre la movilidad urbana, los servicios de venta de entradas y el ambiente urbano reducen la percepción global del destino por parte de los visitantes. Asimismo, la aplicación de metodologías de investigación basadas en minería de textos permite superar diversas limitaciones habitualmente asociadas a los enfoques tradicionales fundamentados en cuestionarios estructurados y encuestas a consumidores. Las implicaciones prácticas ayudan a los gestores de destinos a reforzar los atributos mejor valorados y a corregir aquellos aspectos que reciben una percepción negativa."
+    },
+
+    "links": {
+      "article": "https://doi.org/10.1080/20565607.2026.2639343",
+      "interactiveAppendix": "",
+      "github": ""
+    }
+  }
 ]
-}
