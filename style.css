@@ -194,7 +194,7 @@ img {
 .academic-hero {
   /* Homepage-only composition inspired by a modern university profile portal. */
   background:
-    linear-gradient(90deg, rgba(250, 252, 253, 0.94) 0%, rgba(250, 252, 253, 0.82) 45%, rgba(237, 246, 250, 0.30) 100%),
+    linear-gradient(90deg,rgba(248,250,252,.82) 0%,rgba(248,250,252,.55) 40%,rgba(248,250,252,.10) 75%,rgba(248,250,252,0) 100%),
     url("images/hero.png?homepage=2");
   background-size: cover;
   background-position: center;
