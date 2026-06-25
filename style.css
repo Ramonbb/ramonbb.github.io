@@ -199,7 +199,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: calc(100vh - 72px);
+  min-height: 110vh;
   padding: clamp(58px, 7vh, 90px) 0 52px;
   color: var(--ink);
 }
