@@ -192,10 +192,14 @@ img {
 }
 
 .academic-hero {
-  /* Homepage-only composition inspired by a modern university profile portal. */
   background:
-    linear-gradient(90deg, rgba(250, 252, 253, 0.94) 0%, rgba(250, 252, 253, 0.82) 45%, rgba(237, 246, 250, 0.30) 100%),
-    url("images/hero.png?homepage=2");
+    linear-gradient(
+      90deg,
+      rgba(250, 252, 253, 0.88) 0%,
+      rgba(250, 252, 253, 0.76) 45%,
+      rgba(237, 246, 250, 0.24) 100%
+    ),
+    url("images/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
