@@ -1,1 +1,23 @@
-[]
+{
+"title":"title...",
+
+"journal":"journal...",
+
+"year":2026,
+
+"doi":"...",
+
+"authors":"rbb...",
+
+"keywords":[..rbb.],
+
+"abstract": ".hola..",
+
+"featured":true,
+
+"resources":[
+"LDA",
+"Sentiment Analysis",
+"CHAID"
+]
+}
