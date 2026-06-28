@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive visualisation of Barcelona's tourism topic structure using LDAvis.">
+  <title>Visualisation of topic structure using LDAvis</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">LDA model · Barcelona tourism reviews</p>
+        <h1>Visualisation of topic structure <span>using LDAvis</span></h1>
+      </div>
+      <div class="summary" aria-label="Model summary">
+        <div class="summary-card"><strong>7</strong><span>topics</span></div>
+        <div class="summary-card"><strong>167</strong><span>terms</span></div>
+      </div>
+    </header>
+
+    <section class="workspace">
+      <article class="panel map-panel">
+        <header class="panel-header">
+          <h2>LDA topic map</h2>
+          <span>Click a circle</span>
+        </header>
+        <div class="panel-body">
+          <div class="topic-map" id="topic-map" role="group" aria-label="Interactive intertopic distance map">
+            <p class="map-title">Intertopic Distance Map (via multidimensional scaling)</p>
+            <span class="axis axis-x"></span>
+            <span class="axis axis-y"></span>
+            <span class="axis-label label-pc1">PC1</span>
+            <span class="axis-label label-pc2">PC2</span>
+          </div>
+          <p class="map-note">Each circle represents one topic from the LDA model. Select a circle to display its most relevant terms and representative visitor sentence.</p>
+        </div>
+      </article>
+
+      <article class="panel info-panel">
+        <header class="panel-header">
+          <h2>Topic information</h2>
+          <span>Topic <strong id="current-topic">1</strong> of 7</span>
+        </header>
+        <div class="info-body topic-detail" id="topic-detail" aria-live="polite">
+          <div class="topic-heading">
+            <div class="topic-mark" id="topic-mark">1</div>
+            <h3 id="detail-label"></h3>
+          </div>
+          <section class="detail-section">
+            <p class="section-label">Top-most relevant terms</p>
+            <div class="terms" id="terms"></div>
+          </section>
+          <section class="detail-section">
+            <p class="section-label">Representative visitor sentence</p>
+            <blockquote id="sentence"></blockquote>
+          </section>
+        </div>
+        <nav class="topic-navigation" id="topic-list" aria-label="Topic navigation"></nav>
+      </article>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
