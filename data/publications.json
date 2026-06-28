@@ -1,0 +1,64 @@
+[
+  {
+    "id": "publication-001",
+    "featured": true,
+    "title": "A text-mining framework for measuring urban destination attractiveness",
+    "authors": "Ramón Barrera-Barrera",
+    "journal": "International Journal of Tourism Cities",
+    "year": "2026",
+    "volume": "",
+    "issue": "",
+    "pages": "1-15",
+    "publishedOnline": "2026-03-11",
+    "doi": "10.1080/20565607.2026.2639343",
+    "doiUrl": "https://doi.org/10.1080/20565607.2026.2639343",
+    "qualityBadges": [],
+    "categories": ["tourism", "marketing", "text-mining"],
+    "tags": {
+      "en": ["Text Mining", "Urban Tourism", "Destination Attractiveness"],
+      "es": ["Minería de Textos", "Turismo Urbano", "Atractivo del Destino"]
+    },
+    "abstract": {
+      "en": "",
+      "es": ""
+    },
+    "links": {
+      "article": "https://doi.org/10.1080/20565607.2026.2639343",
+      "results": ""
+    },
+    "journalBadge": "IJTC",
+    "journalLogo": "",
+    "featuredImage": ""
+  },
+  {
+    "id": "publication-002",
+    "featured": false,
+    "title": "The influence of heritage designation on guest satisfaction in Spanish paradores: A text-mining analysis of online reviews",
+    "authors": "Ramón Barrera-Barrera",
+    "journal": "Tourism and Hospitality Research",
+    "year": "2026",
+    "volume": "",
+    "issue": "",
+    "pages": "",
+    "publishedOnline": "2026-06-01",
+    "doi": "10.1177/14673584261455451",
+    "doiUrl": "https://doi.org/10.1177/14673584261455451",
+    "qualityBadges": [],
+    "categories": ["tourism", "hospitality", "heritage-tourism", "text-mining"],
+    "tags": {
+      "en": ["Heritage Tourism", "Paradores", "Online Reviews", "Text Mining", "Guest Satisfaction"],
+      "es": ["Turismo Patrimonial", "Paradores", "Reseñas en Línea", "Minería de Textos", "Satisfacción del Huésped"]
+    },
+    "abstract": {
+      "en": "This study examines the role of legal heritage protection in shaping the guest experience and overall satisfaction in heritage hotels, using the Spanish Paradores network as a reference. An empirical analysis is conducted in three phases: (1) identification of the main experiential attributes using Latent Dirichlet Allocation (LDA) applied to 37,741 online reviews; (2) assessment of guests' perceptions through sentiment analysis; and (3) estimation of the effect of these attributes on overall satisfaction using binary logistic regression. The LDA model identifies that the guest experience is structured around five key attributes: room quality, staff service, building, location and accessibility, and food and beverage offerings. Building-related perceptions are significantly higher in BIC-designated paradores, whereas no significant differences are observed across parador types for the remaining attributes. Logistic regression results indicate that the building emerges as the primary determinant of satisfaction. Moreover, both BIC-designated and renovated paradores show a higher probability of receiving top ratings compared to modern establishments, with no significant differences between the former two. This finding challenges the assumption that higher levels of heritage protection necessarily lead to higher satisfaction. The study provides both theoretical and practical implications for the management of heritage accommodations according to their level of legal protection.",
+      "es": "Este estudio examina el papel de la protección legal del patrimonio en la configuración de la experiencia del huésped y de la satisfacción global en hoteles patrimoniales, tomando como referencia la red española de Paradores. Se realiza un análisis empírico en tres fases: (1) identificación de los principales atributos experienciales mediante Latent Dirichlet Allocation (LDA) aplicada a 37.741 reseñas en línea; (2) evaluación de las percepciones de los huéspedes mediante análisis de sentimiento; y (3) estimación del efecto de dichos atributos sobre la satisfacción global mediante regresión logística binaria. El modelo LDA identifica que la experiencia del huésped se estructura en torno a cinco atributos clave: calidad de la habitación, servicio del personal, edificio, ubicación y accesibilidad, y oferta de alimentos y bebidas. Las percepciones relacionadas con el edificio son significativamente más altas en los paradores declarados BIC, mientras que no se observan diferencias significativas entre tipos de paradores para el resto de atributos. Los resultados de la regresión logística indican que el edificio emerge como el principal determinante de la satisfacción. Además, tanto los paradores declarados BIC como los renovados muestran una mayor probabilidad de recibir las puntuaciones máximas en comparación con los establecimientos modernos, sin diferencias significativas entre los dos primeros grupos. Este hallazgo cuestiona la suposición de que mayores niveles de protección patrimonial conduzcan necesariamente a una mayor satisfacción. El estudio ofrece implicaciones teóricas y prácticas para la gestión de alojamientos patrimoniales según su nivel de protección legal."
+    },
+    "links": {
+      "article": "https://doi.org/10.1177/14673584261455451",
+      "results": ""
+    },
+    "journalBadge": "THR",
+    "journalLogo": "",
+    "featuredImage": ""
+  }
+]
