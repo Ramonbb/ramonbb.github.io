@@ -1,0 +1,1 @@
+results/destination_attractiveness
