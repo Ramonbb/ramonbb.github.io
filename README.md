@@ -11,7 +11,8 @@ Static bilingual academic website for a university professor and researcher spec
 - `publications.html` - Publication-page structure, filters, empty state, and dynamic list container.
 - `data/publications.json` - Publication database loaded dynamically by `script.js`.
 - `projects.html` - Research projects with descriptions, methods, findings, and related publications.
-- `appendices.html` - Interactive appendix and research-resource cards.
+- `appendices.html` - Research resources page with filters and a dynamic card list.
+- `data/research-resources.json` - Research-resource database for R packages, CRAN links, and methodological notes.
 - `teaching.html` - Teaching areas, course descriptions, objectives, and materials.
 - `contact.html` - Professional profile, academic links, and a frontend-only contact form.
 - `style.css` - Shared responsive design and language-selector styles.
@@ -148,9 +149,55 @@ Copy a `.project-card.detailed` block in `projects.html`. Keep the project name 
 
 ## How to Add New Interactive Appendices
 
-Copy a `.resource-card` block in `appendices.html`. Add bilingual keys for its heading and description, then replace the placeholder link with the final resource URL.
+The `appendices.html` page is now used as a research-resource catalog. Do not edit the HTML to add individual resources. Add new entries to `data/research-resources.json`.
 
-Interactive appendices may be separate HTML pages, external dashboards, hosted notebooks, or downloadable resources.
+## How to Add New Research Resources
+
+Add a new object to `data/research-resources.json`. Use official CRAN links as the primary source for R package documentation instead of uploading local copies of CRAN PDFs.
+
+Recommended fields:
+
+- `packageName`
+- `authors`
+- `type`
+- `version`
+- `consulted`
+- `categories`
+- `tags.en`, `tags.es`
+- `description.en`, `description.es`
+- `researchUse.en`, `researchUse.es`
+- `links.cran`
+
+Example:
+
+```json
+{
+  "id": "resource-example",
+  "packageName": "examplePackage",
+  "authors": "Author One, Author Two",
+  "type": "R package",
+  "version": "1.0.0",
+  "consulted": "August 2026",
+  "categories": ["text-mining"],
+  "tags": {
+    "en": ["Text Mining"],
+    "es": ["Minería de textos"]
+  },
+  "description": {
+    "en": "Brief package description.",
+    "es": "Breve explicación del paquete."
+  },
+  "researchUse": {
+    "en": "How this resource is used in research workflows.",
+    "es": "Cómo se utiliza este recurso en los flujos de trabajo de investigación."
+  },
+  "links": {
+    "cran": "https://CRAN.R-project.org/package=examplePackage"
+  }
+}
+```
+
+Valid categories currently include `text-mining`, `topic-modeling`, `sentiment-analysis`, and `visualization`.
 
 ## How to Deploy on GitHub Pages
 
