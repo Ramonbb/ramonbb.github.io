@@ -1,0 +1,26 @@
+[
+  {
+    "id": "resource-ldatuning",
+    "packageName": "ldatuning",
+    "authors": "Nikita Murzintcev, Chaney Thain",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["topic-modeling", "text-mining"],
+    "tags": {
+      "en": ["Topic Modeling", "LDA", "Text Mining"],
+      "es": ["Modelado de tópicos", "LDA", "Minería de textos"]
+    },
+    "description": {
+      "en": "R package designed to support the selection of the number of topics in Latent Dirichlet Allocation models using several tuning metrics.",
+      "es": "Paquete de R diseñado para apoyar la selección del número de tópicos en modelos Latent Dirichlet Allocation mediante distintas métricas de ajuste."
+    },
+    "researchUse": {
+      "en": "Useful for methodological decisions in topic modeling workflows applied to online reviews, tourism narratives, and other textual corpora.",
+      "es": "Útil para decisiones metodológicas en flujos de trabajo de modelado de tópicos aplicados a reseñas en línea, narrativas turísticas y otros corpus textuales."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=ldatuning"
+    }
+  }
+]
