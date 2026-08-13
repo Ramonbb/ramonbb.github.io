@@ -22,5 +22,197 @@
     "links": {
       "cran": "https://CRAN.R-project.org/package=ldatuning"
     }
+  },
+  {
+    "id": "resource-topicmodels",
+    "packageName": "topicmodels",
+    "authors": "Bettina Grün, Kurt Hornik",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["topic-modeling", "text-mining"],
+    "tags": {
+      "en": ["Topic Modeling", "LDA", "CTM", "Text Mining"],
+      "es": ["Modelado de tópicos", "LDA", "CTM", "Minería de textos"]
+    },
+    "description": {
+      "en": "R package that provides an interface for fitting Latent Dirichlet Allocation and Correlated Topic Models.",
+      "es": "Paquete de R que proporciona una interfaz para ajustar modelos Latent Dirichlet Allocation y modelos de tópicos correlacionados."
+    },
+    "researchUse": {
+      "en": "Useful for estimating and comparing topic models in textual corpora such as online reviews, tourism narratives, and open-ended survey responses.",
+      "es": "Útil para estimar y comparar modelos de tópicos en corpus textuales como reseñas en línea, narrativas turísticas y respuestas abiertas de encuestas."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=topicmodels"
+    }
+  },
+  {
+    "id": "resource-lda",
+    "packageName": "lda",
+    "authors": "Jonathan Chang",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["topic-modeling", "text-mining"],
+    "tags": {
+      "en": ["Topic Modeling", "Collapsed Gibbs Sampling", "LDA"],
+      "es": ["Modelado de tópicos", "Muestreo de Gibbs colapsado", "LDA"]
+    },
+    "description": {
+      "en": "R package for fitting Latent Dirichlet Allocation and related topic models using collapsed Gibbs sampling methods.",
+      "es": "Paquete de R para ajustar Latent Dirichlet Allocation y modelos de tópicos relacionados mediante métodos de muestreo de Gibbs colapsado."
+    },
+    "researchUse": {
+      "en": "Relevant for LDA estimation workflows where Gibbs sampling is preferred and for comparing alternative topic-modeling implementations.",
+      "es": "Relevante para flujos de estimación LDA cuando se prefiere el muestreo de Gibbs y para comparar implementaciones alternativas de modelado de tópicos."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=lda"
+    }
+  },
+  {
+    "id": "resource-textminer",
+    "packageName": "textmineR",
+    "authors": "Tommy Jones, William Doane, Mattias Attbom",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["text-mining", "topic-modeling"],
+    "tags": {
+      "en": ["Text Mining", "Topic Modeling", "Document-Term Matrix", "Diagnostics"],
+      "es": ["Minería de textos", "Modelado de tópicos", "Matriz documento-término", "Diagnóstico"]
+    },
+    "description": {
+      "en": "R package that supports text mining workflows, topic-model estimation, document-term matrix creation, and topic-model diagnostics.",
+      "es": "Paquete de R que apoya flujos de trabajo de minería de textos, estimación de modelos de tópicos, creación de matrices documento-término y diagnóstico de modelos."
+    },
+    "researchUse": {
+      "en": "Useful for building complete text-mining pipelines for online reviews, including preprocessing, modeling, and evaluation.",
+      "es": "Útil para construir flujos completos de minería de textos aplicados a reseñas en línea, incluyendo preprocesamiento, modelización y evaluación."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=textmineR"
+    }
+  },
+  {
+    "id": "resource-tidylda",
+    "packageName": "tidylda",
+    "authors": "Tommy Jones, Brendan Knapp, Barum Park",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["topic-modeling", "text-mining"],
+    "tags": {
+      "en": ["Topic Modeling", "Tidyverse", "LDA", "Transfer Learning"],
+      "es": ["Modelado de tópicos", "Tidyverse", "LDA", "Aprendizaje por transferencia"]
+    },
+    "description": {
+      "en": "R package for Latent Dirichlet Allocation using tidyverse conventions, collapsed Gibbs sampling, guided models, and transfer-learning workflows.",
+      "es": "Paquete de R para Latent Dirichlet Allocation con convenciones tidyverse, muestreo de Gibbs colapsado, modelos guiados y flujos de aprendizaje por transferencia."
+    },
+    "researchUse": {
+      "en": "Helpful when topic modeling needs to be integrated into tidy data workflows and reproducible analysis pipelines.",
+      "es": "Adecuado cuando el modelado de tópicos debe integrarse en flujos de datos tidy y procesos de análisis reproducibles."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=tidylda"
+    }
+  },
+  {
+    "id": "resource-sentopics",
+    "packageName": "sentopics",
+    "authors": "Olivier Delmarcelle",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["sentiment-analysis", "topic-modeling", "text-mining"],
+    "tags": {
+      "en": ["Sentiment Analysis", "Topic Modeling", "Joint Models", "Text Mining"],
+      "es": ["Análisis de sentimientos", "Modelado de tópicos", "Modelos conjuntos", "Minería de textos"]
+    },
+    "description": {
+      "en": "R package with tools for joint sentiment and topic analysis of textual data.",
+      "es": "Paquete de R con herramientas para el análisis conjunto de sentimientos y tópicos en datos textuales."
+    },
+    "researchUse": {
+      "en": "Useful for exploring how themes and evaluations appear together in online reviews, tourist narratives, and other opinion-rich corpora.",
+      "es": "Útil para explorar cómo temas y valoraciones aparecen conjuntamente en reseñas en línea, narrativas turísticas y otros corpus con contenido opinativo."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=sentopics"
+    }
+  },
+  {
+    "id": "resource-ldavis",
+    "packageName": "LDAvis",
+    "authors": "Carson Sievert, Kenny Shirley",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["visualization", "topic-modeling"],
+    "tags": {
+      "en": ["Visualization", "Topic Modeling", "LDA", "Interactive Analysis"],
+      "es": ["Visualización", "Modelado de tópicos", "LDA", "Análisis interactivo"]
+    },
+    "description": {
+      "en": "R package for creating interactive web-based visualizations that help interpret LDA topic models.",
+      "es": "Paquete de R para crear visualizaciones web interactivas que facilitan la interpretación de modelos de tópicos LDA."
+    },
+    "researchUse": {
+      "en": "Useful for communicating topic-model results through interactive visual summaries of topics and relevant terms.",
+      "es": "Útil para comunicar resultados de modelos de tópicos mediante resúmenes visuales interactivos de tópicos y términos relevantes."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=LDAvis"
+    }
+  },
+  {
+    "id": "resource-tokenizers",
+    "packageName": "tokenizers",
+    "authors": "Thomas Charlon, Lincoln Mullen, Kenneth Benoit, Os Keyes, Dmitry Selivanov, Jeffrey Arnold",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["text-mining"],
+    "tags": {
+      "en": ["Tokenization", "Text Preprocessing", "N-grams", "Natural Language Processing"],
+      "es": ["Tokenización", "Preprocesamiento textual", "N-gramas", "Procesamiento del lenguaje natural"]
+    },
+    "description": {
+      "en": "R package that provides fast and consistent tokenization functions for natural language text.",
+      "es": "Paquete de R que proporciona funciones rápidas y consistentes de tokenización para textos en lenguaje natural."
+    },
+    "researchUse": {
+      "en": "Useful for preparing textual corpora before building document-term matrices, topic models, or sentiment-analysis workflows.",
+      "es": "Útil para preparar corpus textuales antes de construir matrices documento-término, modelos de tópicos o flujos de análisis de sentimientos."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=tokenizers"
+    }
+  },
+  {
+    "id": "resource-stopwords",
+    "packageName": "stopwords",
+    "authors": "Kenneth Benoit, David Muhr, Kohei Watanabe",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["text-mining"],
+    "tags": {
+      "en": ["Stopwords", "Text Preprocessing", "Multilingual Text", "Natural Language Processing"],
+      "es": ["Palabras vacías", "Preprocesamiento textual", "Texto multilingüe", "Procesamiento del lenguaje natural"]
+    },
+    "description": {
+      "en": "R package that provides multiple sources of multilingual stopword lists for text analysis and natural language processing.",
+      "es": "Paquete de R que ofrece múltiples fuentes de listas multilingües de palabras vacías para análisis textual y procesamiento del lenguaje natural."
+    },
+    "researchUse": {
+      "en": "Useful for transparent and reproducible preprocessing decisions when cleaning tourism reviews and other multilingual textual sources.",
+      "es": "Útil para decisiones de preprocesamiento transparentes y reproducibles al limpiar reseñas turísticas y otras fuentes textuales multilingües."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=stopwords"
+    }
   }
 ]
