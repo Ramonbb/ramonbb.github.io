@@ -214,5 +214,29 @@
     "links": {
       "cran": "https://CRAN.R-project.org/package=stopwords"
     }
+  },
+  {
+    "id": "resource-sentimentr",
+    "packageName": "sentimentr",
+    "authors": "Tyler Rinker",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["sentiment-analysis", "text-mining"],
+    "tags": {
+      "en": ["Sentiment Analysis", "Polarity", "Text Mining", "Natural Language Processing"],
+      "es": ["Análisis de sentimientos", "Polaridad", "Minería de textos", "Procesamiento del lenguaje natural"]
+    },
+    "description": {
+      "en": "R package for calculating text polarity sentiment at the sentence level and aggregating sentiment by meaningful grouping variables.",
+      "es": "Paquete de R para calcular la polaridad del sentimiento en textos a nivel de frase y agregar el sentimiento mediante variables de agrupación relevantes."
+    },
+    "researchUse": {
+      "en": "Useful for analyzing evaluative language in online reviews, tourist comments, and other opinion-based textual sources.",
+      "es": "Útil para analizar lenguaje valorativo en reseñas en línea, comentarios turísticos y otras fuentes textuales basadas en opiniones."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=sentimentr"
+    }
   }
 ]
