@@ -1,0 +1,22 @@
+[
+  {
+    "id": "reference-blei-2012-probabilistic-topic-models",
+    "authors": "Blei, D. M.",
+    "year": "2012",
+    "title": "Probabilistic Topic Models",
+    "journal": "Communications of the ACM",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["Topic Modeling", "LDA", "Probabilistic Models", "Text Mining"],
+      "es": ["Modelado de tópicos", "LDA", "Modelos probabilísticos", "Minería de textos"]
+    },
+    "apa": "Blei, D. M. (2012). Probabilistic topic models. Communications of the ACM.",
+    "note": {
+      "en": "Foundational reference for probabilistic topic modeling and the conceptual basis of LDA-based text analysis.",
+      "es": "Referencia fundamental para el modelado probabilístico de tópicos y la base conceptual del análisis textual mediante LDA."
+    },
+    "links": {
+      "source": ""
+    }
+  }
+]
