@@ -950,6 +950,21 @@ function openCitationModal(publication) {
   closeButton.focus();
 }
 
+function openReferenceCitationModal(reference) {
+  const modal = getCitationModal();
+  const title = modal.querySelector("#citation-modal-title");
+  const text = modal.querySelector(".citation-text");
+  const closeButton = modal.querySelector(".citation-close");
+
+  title.textContent = getTranslation(currentLanguage, "publications.citationTitle");
+  text.textContent = reference.apa || "";
+  closeButton.textContent = "×";
+  closeButton.setAttribute("aria-label", getTranslation(currentLanguage, "publications.closeCitation"));
+  modal.hidden = false;
+  document.body.classList.add("modal-open");
+  closeButton.focus();
+}
+
 function closeCitationModal() {
   const modal = document.getElementById("citation-modal");
   if (!modal) return;
@@ -1152,15 +1167,6 @@ function createReferenceCard(reference) {
     createReferenceMeta("references.journal", reference.journal)
   ].filter(Boolean).forEach((item) => card.append(item));
 
-  if (reference.apa) {
-    const citation = createElement("p", "resource-description reference-citation");
-    citation.append(
-      createElement("strong", "", getTranslation(currentLanguage, "references.citation")),
-      document.createTextNode(` ${reference.apa}`)
-    );
-    card.append(citation);
-  }
-
   const note = getLocalizedReferenceValue(reference.note);
   if (note) {
     const text = createElement("p", "resource-description");
@@ -1180,15 +1186,27 @@ function createReferenceCard(reference) {
   }
 
   const sourceUrl = reference.links?.source;
-  if (sourceUrl) {
+  if (sourceUrl || reference.apa) {
     const actions = createElement("div", "card-actions resource-actions");
-    const link = createElement("a", "button small primary", getTranslation(currentLanguage, "references.viewSource"));
-    link.href = sourceUrl;
-    if (/^https?:\/\//i.test(sourceUrl)) {
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
+
+    if (sourceUrl) {
+      const link = createElement("a", "button small primary", getTranslation(currentLanguage, "references.viewSource"));
+      link.href = sourceUrl;
+      if (/^https?:\/\//i.test(sourceUrl)) {
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      }
+      actions.append(link);
     }
-    actions.append(link);
+
+    if (reference.apa) {
+      const citeButton = createElement("button", "button small ghost reference-cite-button");
+      citeButton.type = "button";
+      citeButton.dataset.referenceId = reference.id || "";
+      citeButton.textContent = getTranslation(currentLanguage, "publications.cite");
+      actions.append(citeButton);
+    }
+
     card.append(actions);
   }
 
@@ -1402,6 +1420,17 @@ document.addEventListener("DOMContentLoaded", () => {
           willOpen ? "publications.hideAbstract" : "publications.abstract"
         );
       }
+    });
+  }
+
+  const referenceList = document.getElementById("reference-list");
+  if (referenceList) {
+    referenceList.addEventListener("click", (event) => {
+      const citeButton = event.target.closest(".reference-cite-button");
+      if (!citeButton) return;
+
+      const reference = referencesData.find((item) => item.id === citeButton.dataset.referenceId);
+      if (reference) openReferenceCitationModal(reference);
     });
   }
 
