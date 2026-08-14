@@ -5,7 +5,7 @@
     "authors": "Nikita Murzintcev, Chaney Thain",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2020-04-21",
     "categories": ["topic-modeling", "text-mining"],
     "tags": {
       "en": ["Topic Modeling", "LDA", "Text Mining"],
@@ -29,7 +29,7 @@
     "authors": "Bettina Grün, Kurt Hornik",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2024-08-14",
     "categories": ["topic-modeling", "text-mining"],
     "tags": {
       "en": ["Topic Modeling", "LDA", "CTM", "Text Mining"],
@@ -53,7 +53,7 @@
     "authors": "Jonathan Chang",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2024-04-27",
     "categories": ["topic-modeling", "text-mining"],
     "tags": {
       "en": ["Topic Modeling", "Collapsed Gibbs Sampling", "LDA"],
@@ -77,7 +77,7 @@
     "authors": "Tommy Jones, William Doane, Mattias Attbom",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2025-10-18",
     "categories": ["text-mining", "topic-modeling"],
     "tags": {
       "en": ["Text Mining", "Topic Modeling", "Document-Term Matrix", "Diagnostics"],
@@ -101,7 +101,7 @@
     "authors": "Tommy Jones, Brendan Knapp, Barum Park",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2025-11-14",
     "categories": ["topic-modeling", "text-mining"],
     "tags": {
       "en": ["Topic Modeling", "Tidyverse", "LDA", "Transfer Learning"],
@@ -125,7 +125,7 @@
     "authors": "Olivier Delmarcelle",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2025-10-15",
     "categories": ["sentiment-analysis", "topic-modeling", "text-mining"],
     "tags": {
       "en": ["Sentiment Analysis", "Topic Modeling", "Joint Models", "Text Mining"],
@@ -149,7 +149,7 @@
     "authors": "Carson Sievert, Kenny Shirley",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2015-10-24",
     "categories": ["visualization", "topic-modeling"],
     "tags": {
       "en": ["Visualization", "Topic Modeling", "LDA", "Interactive Analysis"],
@@ -173,7 +173,7 @@
     "authors": "Thomas Charlon, Lincoln Mullen, Kenneth Benoit, Os Keyes, Dmitry Selivanov, Jeffrey Arnold",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2022-12-22",
     "categories": ["text-mining"],
     "tags": {
       "en": ["Tokenization", "Text Preprocessing", "N-grams", "Natural Language Processing"],
@@ -197,7 +197,7 @@
     "authors": "Kenneth Benoit, David Muhr, Kohei Watanabe",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2021-10-28",
     "categories": ["text-mining"],
     "tags": {
       "en": ["Stopwords", "Text Preprocessing", "Multilingual Text", "Natural Language Processing"],
@@ -221,7 +221,7 @@
     "authors": "Tyler Rinker",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2021-10-12",
     "categories": ["sentiment-analysis", "text-mining"],
     "tags": {
       "en": ["Sentiment Analysis", "Polarity", "Text Mining", "Natural Language Processing"],
@@ -245,7 +245,7 @@
     "authors": "John Harrison",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2026-02-19",
     "categories": ["text-mining", "methodology"],
     "tags": {
       "en": ["Web Scraping", "Browser Automation", "Selenium", "Data Collection"],
@@ -269,7 +269,7 @@
     "authors": "Julia Silge, David Robinson, Gabriela De Queiroz, Colin Fay, Emil Hvitfeldt, Os Keyes, Kanishka Misra, Tim Mastny, Jeff Erickson",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2025-07-25",
     "categories": ["text-mining", "sentiment-analysis", "topic-modeling"],
     "tags": {
       "en": ["Text Mining", "Tidy Data", "Sentiment Analysis", "Topic Modeling"],
@@ -293,7 +293,7 @@
     "authors": "Kenneth Benoit, Kohei Watanabe, Haiyan Wang, Paul Nulty, Adam Obeng, Stefan Müller, Akitaka Matsuo, William Lowe",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2026-04-06",
     "categories": ["text-mining", "sentiment-analysis", "topic-modeling", "visualization"],
     "tags": {
       "en": ["Quantitative Text Analysis", "Corpus Management", "Tokens", "Document-Feature Matrix"],
@@ -317,7 +317,7 @@
     "authors": "Hadley Wickham, Posit Software, PBC",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2025-11-04",
     "categories": ["text-mining", "methodology"],
     "tags": {
       "en": ["String Processing", "Regular Expressions", "Text Cleaning", "Tidyverse"],
@@ -341,7 +341,7 @@
     "authors": "Marek Gagolewski, Bartek Tartanus, Unicode, Inc. and others",
     "type": "R package",
     "version": "",
-    "consulted": "August 2026",
+    "published": "2025-03-27",
     "categories": ["text-mining", "methodology"],
     "tags": {
       "en": ["String Processing", "Unicode", "Regular Expressions", "Text Normalization"],
