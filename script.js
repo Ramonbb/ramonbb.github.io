@@ -35,6 +35,7 @@ const translations = {
     },
     footer: { rights: "All rights reserved." },
     labels: {
+      author: "Author:",
       authors: "Authors:",
       description: "Description:",
       methodsUsed: "Methods used:",
@@ -134,6 +135,7 @@ const translations = {
       title: "Publications",
       journal: "Journal",
       year: "Year",
+      publicationDate: "Publication date:",
       volumeIssue: "Volume / issue",
       pages: "Pages",
       publishedOnline: "Published online",
@@ -302,6 +304,7 @@ const translations = {
     },
     footer: { rights: "Todos los derechos reservados." },
     labels: {
+      author: "Autor:",
       authors: "Autores:",
       description: "Descripción:",
       methodsUsed: "Métodos utilizados:",
@@ -401,6 +404,7 @@ const translations = {
       title: "Publicaciones",
       journal: "Revista",
       year: "Año",
+      publicationDate: "Fecha publicación:",
       volumeIssue: "Volumen / número",
       pages: "Páginas",
       publishedOnline: "Publicación en línea",
@@ -668,6 +672,13 @@ function formatApaAuthors(authors) {
   return `${authorList.slice(0, -1).join(", ")}, & ${authorList.at(-1)}`;
 }
 
+function hasSinglePublicationAuthor(authors) {
+  return (authors || "")
+    .split(";")
+    .map((author) => author.trim())
+    .filter(Boolean).length === 1;
+}
+
 function createApaReference(publication) {
   const authors = formatApaAuthors(publication.authors);
   const year = publication.year || "n.d.";
@@ -757,9 +768,6 @@ function createPublicationCard(publication) {
   if (publication.journal) {
     publicationTopline.append(createElement("p", "publication-journal-name", publication.journal));
   }
-  if (publication.year) {
-    publicationTopline.append(createElement("p", "publication-year-badge", publication.year));
-  }
   if (publicationTopline.children.length) {
     card.append(publicationTopline);
   }
@@ -783,11 +791,23 @@ function createPublicationCard(publication) {
 
   if (publication.authors) {
     const authors = createElement("p", "publication-authors");
+    const authorLabelKey = hasSinglePublicationAuthor(publication.authors)
+      ? "labels.author"
+      : "labels.authors";
     authors.append(
-      createElement("strong", "", getTranslation(currentLanguage, "labels.authors")),
+      createElement("strong", "", getTranslation(currentLanguage, authorLabelKey)),
       document.createTextNode(` ${publication.authors}`)
     );
     content.append(authors);
+  }
+
+  if (publication.year) {
+    const publicationDate = createElement("p", "publication-authors publication-date");
+    publicationDate.append(
+      createElement("strong", "", getTranslation(currentLanguage, "publications.publicationDate")),
+      document.createTextNode(` ${publication.year}`)
+    );
+    content.append(publicationDate);
   }
 
   const doiUrl = publication.doiUrl ||
