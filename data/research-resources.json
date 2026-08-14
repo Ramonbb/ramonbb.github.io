@@ -262,5 +262,101 @@
     "links": {
       "cran": "https://CRAN.R-project.org/package=RSelenium"
     }
+  },
+  {
+    "id": "resource-tidytext",
+    "packageName": "tidytext",
+    "authors": "Julia Silge, David Robinson, Gabriela De Queiroz, Colin Fay, Emil Hvitfeldt, Os Keyes, Kanishka Misra, Tim Mastny, Jeff Erickson",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["text-mining", "sentiment-analysis", "topic-modeling"],
+    "tags": {
+      "en": ["Text Mining", "Tidy Data", "Sentiment Analysis", "Topic Modeling"],
+      "es": ["Minería de textos", "Datos tidy", "Análisis de sentimientos", "Modelado de tópicos"]
+    },
+    "description": {
+      "en": "R package for text mining with tidy data principles, connecting text analysis with tools such as dplyr, tidyr, ggplot2, and related workflows.",
+      "es": "Paquete de R para minería de textos con principios de datos tidy, conectando el análisis textual con herramientas como dplyr, tidyr, ggplot2 y flujos de trabajo relacionados."
+    },
+    "researchUse": {
+      "en": "Useful for structuring review texts, extracting tokens, computing term frequencies, and preparing reproducible text-analysis workflows.",
+      "es": "Útil para estructurar textos de reseñas, extraer tokens, calcular frecuencias de términos y preparar flujos reproducibles de análisis textual."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=tidytext"
+    }
+  },
+  {
+    "id": "resource-quanteda",
+    "packageName": "quanteda",
+    "authors": "Kenneth Benoit, Kohei Watanabe, Haiyan Wang, Paul Nulty, Adam Obeng, Stefan Müller, Akitaka Matsuo, William Lowe",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["text-mining", "sentiment-analysis", "topic-modeling", "visualization"],
+    "tags": {
+      "en": ["Quantitative Text Analysis", "Corpus Management", "Tokens", "Document-Feature Matrix"],
+      "es": ["Análisis cuantitativo de textos", "Gestión de corpus", "Tokens", "Matriz documento-característica"]
+    },
+    "description": {
+      "en": "Fast and flexible R framework for quantitative text analysis, including corpus management, tokenization, document-feature matrices, dictionaries, and text-analysis tools.",
+      "es": "Marco de R rápido y flexible para análisis cuantitativo de textos, incluyendo gestión de corpus, tokenización, matrices documento-característica, diccionarios y herramientas de análisis textual."
+    },
+    "researchUse": {
+      "en": "Useful for managing large corpora of online reviews and preparing text data for topic modeling, sentiment analysis, and quantitative content analysis.",
+      "es": "Útil para gestionar grandes corpus de reseñas en línea y preparar datos textuales para modelado de tópicos, análisis de sentimientos y análisis cuantitativo de contenido."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=quanteda"
+    }
+  },
+  {
+    "id": "resource-stringr",
+    "packageName": "stringr",
+    "authors": "Hadley Wickham, Posit Software, PBC",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["text-mining", "methodology"],
+    "tags": {
+      "en": ["String Processing", "Regular Expressions", "Text Cleaning", "Tidyverse"],
+      "es": ["Procesamiento de cadenas", "Expresiones regulares", "Limpieza textual", "Tidyverse"]
+    },
+    "description": {
+      "en": "R package that provides simple and consistent wrappers for common string operations, built around the stringi package.",
+      "es": "Paquete de R que proporciona funciones simples y consistentes para operaciones comunes con cadenas de texto, construido sobre el paquete stringi."
+    },
+    "researchUse": {
+      "en": "Useful for cleaning, standardizing, detecting, and transforming review text before text-mining and sentiment-analysis procedures.",
+      "es": "Útil para limpiar, estandarizar, detectar y transformar textos de reseñas antes de aplicar procedimientos de minería de textos y análisis de sentimientos."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=stringr"
+    }
+  },
+  {
+    "id": "resource-stringi",
+    "packageName": "stringi",
+    "authors": "Marek Gagolewski, Bartek Tartanus, Unicode, Inc. and others",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["text-mining", "methodology"],
+    "tags": {
+      "en": ["String Processing", "Unicode", "Regular Expressions", "Text Normalization"],
+      "es": ["Procesamiento de cadenas", "Unicode", "Expresiones regulares", "Normalización textual"]
+    },
+    "description": {
+      "en": "R package for fast and portable character-string processing, including pattern searching, collation, transliteration, normalization, and other Unicode-aware text operations.",
+      "es": "Paquete de R para procesamiento rápido y portable de cadenas de caracteres, incluyendo búsqueda de patrones, ordenación, transliteración, normalización y otras operaciones textuales compatibles con Unicode."
+    },
+    "researchUse": {
+      "en": "Useful for robust multilingual text preprocessing, especially when cleaning online reviews containing accents, special characters, and locale-specific text patterns.",
+      "es": "Útil para un preprocesamiento textual multilingüe robusto, especialmente al limpiar reseñas en línea con acentos, caracteres especiales y patrones dependientes del idioma."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=stringi"
+    }
   }
 ]
