@@ -1,5 +1,65 @@
 [
   {
+    "id": "reference-abdelrazek-2023-topic-modeling-survey",
+    "authors": "Abdelrazek, A.; Eid, Y.; Gawish, E.; Medhat, W.; Hassan, A.",
+    "year": "2023",
+    "title": "Topic modeling algorithms and applications: A survey",
+    "journal": "Information Systems",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["Topic Modeling", "Survey", "Algorithms", "Applications"],
+      "es": ["Modelado de tópicos", "Revisión", "Algoritmos", "Aplicaciones"]
+    },
+    "apa": "Abdelrazek, A., Eid, Y., Gawish, E., Medhat, W., & Hassan, A. (2023). Topic modeling algorithms and applications: A survey. Information Systems, 112, 102131. https://doi.org/10.1016/j.is.2022.102131",
+    "note": {
+      "en": "Broad survey of topic-modeling algorithms and application domains, useful for positioning methodological choices.",
+      "es": "Revisión amplia de algoritmos de modelado de tópicos y ámbitos de aplicación, útil para contextualizar decisiones metodológicas."
+    },
+    "links": {
+      "source": "https://doi.org/10.1016/j.is.2022.102131"
+    }
+  },
+  {
+    "id": "reference-alantari-2022-sentiment-analysis-reviews",
+    "authors": "Alantari, H. J.; Currim, I. S.; Deng, Y.; Singh, S.",
+    "year": "2022",
+    "title": "An empirical comparison of machine learning methods for text-based sentiment analysis of online consumer reviews",
+    "journal": "International Journal of Research in Marketing",
+    "categories": ["marketing", "sentiment-analysis", "text-mining"],
+    "tags": {
+      "en": ["Sentiment Analysis", "Online Reviews", "Machine Learning", "Marketing"],
+      "es": ["Análisis de sentimientos", "Reseñas en línea", "Aprendizaje automático", "Marketing"]
+    },
+    "apa": "Alantari, H. J., Currim, I. S., Deng, Y., & Singh, S. (2022). An empirical comparison of machine learning methods for text-based sentiment analysis of online consumer reviews. International Journal of Research in Marketing, 39(1), 1-19. https://doi.org/10.1016/j.ijresmar.2021.10.011",
+    "note": {
+      "en": "Relevant comparison of machine-learning approaches for sentiment analysis in online consumer-review contexts.",
+      "es": "Comparación relevante de enfoques de aprendizaje automático para el análisis de sentimientos en reseñas de consumidores en línea."
+    },
+    "links": {
+      "source": "https://doi.org/10.1016/j.ijresmar.2021.10.011"
+    }
+  },
+  {
+    "id": "reference-arun-2010-natural-number-topics",
+    "authors": "Arun, R.; Suresh, V.; Madhavan, C. E. V.; Murty, M. N.",
+    "year": "2010",
+    "title": "On finding the natural number of topics with latent Dirichlet allocation: Some observations",
+    "journal": "Advances in Knowledge Discovery and Data Mining",
+    "categories": ["topic-modeling", "methodology"],
+    "tags": {
+      "en": ["LDA", "Number of Topics", "Model Selection", "Topic Modeling"],
+      "es": ["LDA", "Número de tópicos", "Selección de modelos", "Modelado de tópicos"]
+    },
+    "apa": "Arun, R., Suresh, V., Madhavan, C. E. V., & Murty, M. N. (2010). On finding the natural number of topics with latent Dirichlet allocation: Some observations. In M. J. Zaki, J. X. Yu, B. Ravindran, & V. Pudi (Eds.), Advances in knowledge discovery and data mining (Lecture Notes in Computer Science, Vol. 6118, pp. 391-402). Springer. https://doi.org/10.1007/978-3-642-13657-3_43",
+    "note": {
+      "en": "Methodological reference for selecting the number of topics in LDA models.",
+      "es": "Referencia metodológica para seleccionar el número de tópicos en modelos LDA."
+    },
+    "links": {
+      "source": "https://doi.org/10.1007/978-3-642-13657-3_43"
+    }
+  },
+  {
     "id": "reference-blei-2012-probabilistic-topic-models",
     "authors": "Blei, D. M.",
     "year": "2012",
@@ -10,13 +70,493 @@
       "en": ["Topic Modeling", "LDA", "Probabilistic Models", "Text Mining"],
       "es": ["Modelado de tópicos", "LDA", "Modelos probabilísticos", "Minería de textos"]
     },
-    "apa": "Blei, D. M. (2012). Probabilistic topic models. Communications of the ACM.",
+    "apa": "Blei, D. M. (2012). Probabilistic topic models. Communications of the ACM, 55(4), 77-84. https://doi.org/10.1145/2133806.2133826",
     "note": {
       "en": "Foundational reference for probabilistic topic modeling and the conceptual basis of LDA-based text analysis.",
       "es": "Referencia fundamental para el modelado probabilístico de tópicos y la base conceptual del análisis textual mediante LDA."
     },
     "links": {
+      "source": "https://doi.org/10.1145/2133806.2133826"
+    }
+  },
+  {
+    "id": "reference-blei-2003-latent-dirichlet-allocation",
+    "authors": "Blei, D. M.; Ng, A. Y.; Jordan, M. I.",
+    "year": "2003",
+    "title": "Latent Dirichlet allocation",
+    "journal": "Journal of Machine Learning Research",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["LDA", "Probabilistic Models", "Machine Learning", "Topic Modeling"],
+      "es": ["LDA", "Modelos probabilísticos", "Aprendizaje automático", "Modelado de tópicos"]
+    },
+    "apa": "Blei, D. M., Ng, A. Y., & Jordan, M. I. (2003). Latent Dirichlet allocation. Journal of Machine Learning Research, 3, 993-1022.",
+    "note": {
+      "en": "Seminal article introducing Latent Dirichlet Allocation as a probabilistic model for collections of discrete data.",
+      "es": "Artículo seminal que introduce Latent Dirichlet Allocation como modelo probabilístico para colecciones de datos discretos."
+    },
+    "links": {
       "source": ""
+    }
+  },
+  {
+    "id": "reference-cao-2009-adaptive-lda-model-selection",
+    "authors": "Cao, J.; Xia, T.; Li, J.; Zhang, Y.; Tang, S.",
+    "year": "2009",
+    "title": "A density-based method for adaptive LDA model selection",
+    "journal": "Neurocomputing",
+    "categories": ["topic-modeling", "methodology"],
+    "tags": {
+      "en": ["LDA", "Model Selection", "Density-Based Methods", "Topic Modeling"],
+      "es": ["LDA", "Selección de modelos", "Métodos basados en densidad", "Modelado de tópicos"]
+    },
+    "apa": "Cao, J., Xia, T., Li, J., Zhang, Y., & Tang, S. (2009). A density-based method for adaptive LDA model selection. Neurocomputing, 72(7-9), 1775-1781. https://doi.org/10.1016/j.neucom.2008.06.011",
+    "note": {
+      "en": "Useful reference for evaluating and selecting the number of topics in LDA applications.",
+      "es": "Referencia útil para evaluar y seleccionar el número de tópicos en aplicaciones LDA."
+    },
+    "links": {
+      "source": "https://doi.org/10.1016/j.neucom.2008.06.011"
+    }
+  },
+  {
+    "id": "reference-chang-2024-lda-r-package",
+    "authors": "Chang, J.",
+    "year": "2024",
+    "title": "lda: Collapsed Gibbs sampling methods for topic models",
+    "journal": "CRAN",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["R Package", "LDA", "Gibbs Sampling", "Topic Modeling"],
+      "es": ["Paquete de R", "LDA", "Muestreo de Gibbs", "Modelado de tópicos"]
+    },
+    "apa": "Chang, J. (2024). lda: Collapsed Gibbs sampling methods for topic models (Version 1.5.2) [R package]. CRAN. https://CRAN.R-project.org/package=lda",
+    "note": {
+      "en": "Software reference for LDA estimation using collapsed Gibbs sampling in R.",
+      "es": "Referencia de software para la estimación de LDA mediante muestreo de Gibbs colapsado en R."
+    },
+    "links": {
+      "source": "https://CRAN.R-project.org/package=lda"
+    }
+  },
+  {
+    "id": "reference-deveaud-2014-latent-concept-modeling",
+    "authors": "Deveaud, R.; SanJuan, E.; Bellot, P.",
+    "year": "2014",
+    "title": "Accurate and effective latent concept modeling for ad hoc information retrieval",
+    "journal": "Document Numérique",
+    "categories": ["topic-modeling", "methodology", "text-mining"],
+    "tags": {
+      "en": ["Latent Concepts", "Information Retrieval", "Topic Coherence", "Topic Modeling"],
+      "es": ["Conceptos latentes", "Recuperación de información", "Coherencia temática", "Modelado de tópicos"]
+    },
+    "apa": "Deveaud, R., SanJuan, E., & Bellot, P. (2014). Accurate and effective latent concept modeling for ad hoc information retrieval. Document Numérique, 17(1), 61-84. https://doi.org/10.3166/DN.17.1.61-84",
+    "note": {
+      "en": "Relevant for latent concept modeling and evaluation criteria in topic-modeling workflows.",
+      "es": "Relevante para el modelado de conceptos latentes y los criterios de evaluación en flujos de modelado de tópicos."
+    },
+    "links": {
+      "source": "https://doi.org/10.3166/DN.17.1.61-84"
+    }
+  },
+  {
+    "id": "reference-griffiths-2004-finding-scientific-topics",
+    "authors": "Griffiths, T. L.; Steyvers, M.",
+    "year": "2004",
+    "title": "Finding scientific topics",
+    "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["Scientific Topics", "LDA", "Probabilistic Modeling", "Topic Modeling"],
+      "es": ["Tópicos científicos", "LDA", "Modelización probabilística", "Modelado de tópicos"]
+    },
+    "apa": "Griffiths, T. L., & Steyvers, M. (2004). Finding scientific topics. Proceedings of the National Academy of Sciences of the United States of America, 101(Suppl. 1), 5228-5235. https://doi.org/10.1073/pnas.0307752101",
+    "note": {
+      "en": "Classic application of probabilistic topic models to scientific literature.",
+      "es": "Aplicación clásica de modelos probabilísticos de tópicos a literatura científica."
+    },
+    "links": {
+      "source": "https://doi.org/10.1073/pnas.0307752101"
+    }
+  },
+  {
+    "id": "reference-grun-2011-topicmodels-r-package",
+    "authors": "Grün, B.; Hornik, K.",
+    "year": "2011",
+    "title": "topicmodels: An R package for fitting topic models",
+    "journal": "Journal of Statistical Software",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["R Package", "Topic Models", "LDA", "Text Mining"],
+      "es": ["Paquete de R", "Modelos de tópicos", "LDA", "Minería de textos"]
+    },
+    "apa": "Grün, B., & Hornik, K. (2011). topicmodels: An R package for fitting topic models. Journal of Statistical Software, 40(13), 1-30. https://doi.org/10.18637/jss.v040.i13",
+    "note": {
+      "en": "Core software reference for fitting topic models in R.",
+      "es": "Referencia principal de software para ajustar modelos de tópicos en R."
+    },
+    "links": {
+      "source": "https://doi.org/10.18637/jss.v040.i13"
+    }
+  },
+  {
+    "id": "reference-harrison-2026-rselenium-r-package",
+    "authors": "Harrison, J.; Kim, J. Y.; Völkle, J.; Gayen, I.",
+    "year": "2026",
+    "title": "RSelenium: R bindings for Selenium WebDriver",
+    "journal": "CRAN",
+    "categories": ["text-mining", "methodology"],
+    "tags": {
+      "en": ["R Package", "Web Scraping", "Browser Automation", "Data Collection"],
+      "es": ["Paquete de R", "Extracción web", "Automatización de navegador", "Recogida de datos"]
+    },
+    "apa": "Harrison, J., Kim, J. Y., Völkle, J., & Gayen, I. (2026). RSelenium: R bindings for Selenium WebDriver (Version 1.7.10) [R package]. CRAN. https://CRAN.R-project.org/package=RSelenium",
+    "note": {
+      "en": "Software reference for browser automation and reproducible collection of web data.",
+      "es": "Referencia de software para automatización de navegador y recogida reproducible de datos web."
+    },
+    "links": {
+      "source": "https://CRAN.R-project.org/package=RSelenium"
+    }
+  },
+  {
+    "id": "reference-hoyle-2021-automated-topic-model-evaluation",
+    "authors": "Hoyle, A.; Goel, P.; Peskov, D.; Hian-Cheong, A.; Boyd-Graber, J.; Resnik, P.",
+    "year": "2021",
+    "title": "Is automated topic model evaluation broken? The incoherence of coherence",
+    "journal": "Advances in Neural Information Processing Systems",
+    "categories": ["topic-modeling", "methodology"],
+    "tags": {
+      "en": ["Topic Evaluation", "Coherence", "Model Validation", "Topic Modeling"],
+      "es": ["Evaluación de tópicos", "Coherencia", "Validación de modelos", "Modelado de tópicos"]
+    },
+    "apa": "Hoyle, A., Goel, P., Peskov, D., Hian-Cheong, A., Boyd-Graber, J., & Resnik, P. (2021). Is automated topic model evaluation broken? The incoherence of coherence. Advances in Neural Information Processing Systems, 34, 2018-2033.",
+    "note": {
+      "en": "Important critical reference on automated coherence metrics for topic-model evaluation.",
+      "es": "Referencia crítica importante sobre métricas automáticas de coherencia para evaluar modelos de tópicos."
+    },
+    "links": {
+      "source": ""
+    }
+  },
+  {
+    "id": "reference-jelodar-2019-lda-survey",
+    "authors": "Jelodar, H.; Wang, Y.; Yuan, C.; Feng, X.; Jiang, X.; Li, Y.; Zhao, L.",
+    "year": "2019",
+    "title": "Latent Dirichlet allocation (LDA) and topic modeling: Models, applications, a survey",
+    "journal": "Multimedia Tools and Applications",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["LDA", "Survey", "Applications", "Topic Modeling"],
+      "es": ["LDA", "Revisión", "Aplicaciones", "Modelado de tópicos"]
+    },
+    "apa": "Jelodar, H., Wang, Y., Yuan, C., Feng, X., Jiang, X., Li, Y., & Zhao, L. (2019). Latent Dirichlet allocation (LDA) and topic modeling: Models, applications, a survey. Multimedia Tools and Applications, 78, 15169-15211. https://doi.org/10.1007/s11042-018-6894-4",
+    "note": {
+      "en": "Survey reference on LDA models, variants, and application areas.",
+      "es": "Referencia de revisión sobre modelos LDA, variantes y áreas de aplicación."
+    },
+    "links": {
+      "source": "https://doi.org/10.1007/s11042-018-6894-4"
+    }
+  },
+  {
+    "id": "reference-kwartler-2017-text-mining-r",
+    "authors": "Kwartler, T.",
+    "year": "2017",
+    "title": "Text mining in practice with R",
+    "journal": "John Wiley & Sons Ltd.",
+    "categories": ["text-mining", "methodology"],
+    "tags": {
+      "en": ["Text Mining", "R", "Applied Methods", "Data Analysis"],
+      "es": ["Minería de textos", "R", "Métodos aplicados", "Análisis de datos"]
+    },
+    "apa": "Kwartler, T. (2017). Text mining in practice with R. John Wiley & Sons Ltd.",
+    "note": {
+      "en": "Applied reference for practical text-mining workflows in R.",
+      "es": "Referencia aplicada para flujos prácticos de minería de textos en R."
+    },
+    "links": {
+      "source": ""
+    }
+  },
+  {
+    "id": "reference-laureate-2023-short-text-social-media",
+    "authors": "Laureate, C. D. P.; Buntine, W.; Linger, H.",
+    "year": "2023",
+    "title": "A systematic review of the use of topic models for short text social media analysis",
+    "journal": "Artificial Intelligence Review",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["Short Text", "Social Media", "Systematic Review", "Topic Modeling"],
+      "es": ["Textos breves", "Redes sociales", "Revisión sistemática", "Modelado de tópicos"]
+    },
+    "apa": "Laureate, C. D. P., Buntine, W., & Linger, H. (2023). A systematic review of the use of topic models for short text social media analysis. Artificial Intelligence Review, 56(12), 14223-14255. https://doi.org/10.1007/s10462-023-10471-x",
+    "note": {
+      "en": "Relevant for topic modeling in short, user-generated textual content.",
+      "es": "Relevante para el modelado de tópicos en contenidos textuales breves generados por usuarios."
+    },
+    "links": {
+      "source": "https://doi.org/10.1007/s10462-023-10471-x"
+    }
+  },
+  {
+    "id": "reference-maier-2018-lda-communication-research",
+    "authors": "Maier, D.; Waldherr, A.; Miltner, P.; Wiedemann, G.; Niekler, A.; Keinert, A.; Pfetsch, B.; Heyer, G.; Reber, U.; Häussler, T.; Schmid-Petri, H.; Adam, S.",
+    "year": "2018",
+    "title": "Applying LDA topic modeling in communication research: Toward a valid and reliable methodology",
+    "journal": "Communication Methods and Measures",
+    "categories": ["topic-modeling", "methodology", "text-mining"],
+    "tags": {
+      "en": ["LDA", "Validity", "Reliability", "Methodology"],
+      "es": ["LDA", "Validez", "Fiabilidad", "Metodología"]
+    },
+    "apa": "Maier, D., Waldherr, A., Miltner, P., Wiedemann, G., Niekler, A., Keinert, A., Pfetsch, B., Heyer, G., Reber, U., Häussler, T., Schmid-Petri, H., & Adam, S. (2018). Applying LDA topic modeling in communication research: Toward a valid and reliable methodology. Communication Methods and Measures, 12(2-3), 93-118. https://doi.org/10.1080/19312458.2018.1430754",
+    "note": {
+      "en": "Key methodological reference on validity and reliability when applying LDA to empirical research.",
+      "es": "Referencia metodológica clave sobre validez y fiabilidad al aplicar LDA en investigación empírica."
+    },
+    "links": {
+      "source": "https://doi.org/10.1080/19312458.2018.1430754"
+    }
+  },
+  {
+    "id": "reference-mimno-2011-semantic-coherence",
+    "authors": "Mimno, D.; Wallach, H. M.; Talley, E.; Leenders, M.; McCallum, A.",
+    "year": "2011",
+    "title": "Optimizing semantic coherence in topic models",
+    "journal": "Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing",
+    "categories": ["topic-modeling", "methodology"],
+    "tags": {
+      "en": ["Semantic Coherence", "Topic Evaluation", "Topic Modeling", "NLP"],
+      "es": ["Coherencia semántica", "Evaluación de tópicos", "Modelado de tópicos", "PLN"]
+    },
+    "apa": "Mimno, D., Wallach, H. M., Talley, E., Leenders, M., & McCallum, A. (2011). Optimizing semantic coherence in topic models. In Proceedings of the 2011 Conference on Empirical Methods in Natural Language Processing (pp. 262-272). Association for Computational Linguistics.",
+    "note": {
+      "en": "Influential reference on semantic coherence as a criterion for topic-model evaluation.",
+      "es": "Referencia influyente sobre la coherencia semántica como criterio de evaluación de modelos de tópicos."
+    },
+    "links": {
+      "source": ""
+    }
+  },
+  {
+    "id": "reference-murzintcev-2020-ldatuning-r-package",
+    "authors": "Murzintcev, N.; Chaney, N.",
+    "year": "2020",
+    "title": "ldatuning: Tuning of the latent Dirichlet allocation models parameters",
+    "journal": "CRAN",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["R Package", "LDA", "Topic Number Selection", "Model Tuning"],
+      "es": ["Paquete de R", "LDA", "Selección del número de tópicos", "Ajuste de modelos"]
+    },
+    "apa": "Murzintcev, N., & Chaney, N. (2020). ldatuning: Tuning of the latent Dirichlet allocation models parameters (Version 1.0.2) [R package]. CRAN. https://CRAN.R-project.org/package=ldatuning",
+    "note": {
+      "en": "Software reference for selecting and tuning the number of topics in LDA models.",
+      "es": "Referencia de software para seleccionar y ajustar el número de tópicos en modelos LDA."
+    },
+    "links": {
+      "source": "https://CRAN.R-project.org/package=ldatuning"
+    }
+  },
+  {
+    "id": "reference-newman-2010-topic-coherence",
+    "authors": "Newman, D.; Lau, J. H.; Grieser, K.; Baldwin, T.",
+    "year": "2010",
+    "title": "Automatic evaluation of topic coherence",
+    "journal": "Human Language Technologies: The 2010 Annual Conference of the North American Chapter of the Association for Computational Linguistics",
+    "categories": ["topic-modeling", "methodology"],
+    "tags": {
+      "en": ["Topic Coherence", "Evaluation", "NLP", "Topic Modeling"],
+      "es": ["Coherencia de tópicos", "Evaluación", "PLN", "Modelado de tópicos"]
+    },
+    "apa": "Newman, D., Lau, J. H., Grieser, K., & Baldwin, T. (2010). Automatic evaluation of topic coherence. In Human language technologies: The 2010 Annual Conference of the North American Chapter of the Association for Computational Linguistics (pp. 100-108). Association for Computational Linguistics.",
+    "note": {
+      "en": "Important reference for automatic measures of topic coherence.",
+      "es": "Referencia importante para medidas automáticas de coherencia de tópicos."
+    },
+    "links": {
+      "source": ""
+    }
+  },
+  {
+    "id": "reference-nielsen-2011-new-anew",
+    "authors": "Nielsen, F. A.",
+    "year": "2011",
+    "title": "A new ANEW: Evaluation of a word list for sentiment analysis in microblogs",
+    "journal": "Proceedings of the ESWC2011 Workshop on Making Sense of Microposts",
+    "categories": ["sentiment-analysis", "text-mining", "methodology"],
+    "tags": {
+      "en": ["Sentiment Analysis", "Lexicon", "Microblogs", "Text Mining"],
+      "es": ["Análisis de sentimientos", "Léxico", "Microblogs", "Minería de textos"]
+    },
+    "apa": "Nielsen, F. A. (2011). A new ANEW: Evaluation of a word list for sentiment analysis in microblogs. In Proceedings of the ESWC2011 Workshop on Making Sense of Microposts: Big things come in small packages, Heraklion, Crete, Greece.",
+    "note": {
+      "en": "Reference for lexicon-based sentiment analysis in short online texts.",
+      "es": "Referencia para análisis de sentimientos basado en léxicos en textos breves en línea."
+    },
+    "links": {
+      "source": ""
+    }
+  },
+  {
+    "id": "reference-qiang-2022-short-text-topic-modeling",
+    "authors": "Qiang, J.; Qian, Z.; Li, Y.; Yuan, Y.; Wu, X.",
+    "year": "2022",
+    "title": "Short text topic modeling techniques, applications, and performance: A survey",
+    "journal": "IEEE Transactions on Knowledge and Data Engineering",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["Short Text", "Topic Modeling", "Survey", "Performance"],
+      "es": ["Textos breves", "Modelado de tópicos", "Revisión", "Rendimiento"]
+    },
+    "apa": "Qiang, J., Qian, Z., Li, Y., Yuan, Y., & Wu, X. (2022). Short text topic modeling techniques, applications, and performance: A survey. IEEE Transactions on Knowledge and Data Engineering, 34(3), 1427-1445. https://doi.org/10.1109/TKDE.2020.2992485",
+    "note": {
+      "en": "Survey reference on techniques and performance issues in short-text topic modeling.",
+      "es": "Referencia de revisión sobre técnicas y problemas de rendimiento en modelado de tópicos con textos breves."
+    },
+    "links": {
+      "source": "https://doi.org/10.1109/TKDE.2020.2992485"
+    }
+  },
+  {
+    "id": "reference-rinker-2021-sentimentr-r-package",
+    "authors": "Rinker, T.",
+    "year": "2021",
+    "title": "sentimentr: Calculate text polarity sentiment",
+    "journal": "CRAN",
+    "categories": ["sentiment-analysis", "text-mining", "methodology"],
+    "tags": {
+      "en": ["R Package", "Sentiment Analysis", "Polarity", "Text Mining"],
+      "es": ["Paquete de R", "Análisis de sentimientos", "Polaridad", "Minería de textos"]
+    },
+    "apa": "Rinker, T. (2021). sentimentr: Calculate text polarity sentiment (Version 2.9.0) [R package]. CRAN. https://CRAN.R-project.org/package=sentimentr",
+    "note": {
+      "en": "Software reference for polarity-based sentiment analysis in R.",
+      "es": "Referencia de software para análisis de sentimientos basado en polaridad en R."
+    },
+    "links": {
+      "source": "https://CRAN.R-project.org/package=sentimentr"
+    }
+  },
+  {
+    "id": "reference-roberts-2019-stm-r-package",
+    "authors": "Roberts, M. E.; Stewart, B. M.; Tingley, D.",
+    "year": "2019",
+    "title": "stm: An R package for structural topic models",
+    "journal": "Journal of Statistical Software",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["Structural Topic Models", "R Package", "Topic Modeling", "Covariates"],
+      "es": ["Modelos estructurales de tópicos", "Paquete de R", "Modelado de tópicos", "Covariables"]
+    },
+    "apa": "Roberts, M. E., Stewart, B. M., & Tingley, D. (2019). stm: An R package for structural topic models. Journal of Statistical Software, 91(2), 1-40. https://doi.org/10.18637/jss.v091.i02",
+    "note": {
+      "en": "Key reference for structural topic models and covariate-informed topic analysis.",
+      "es": "Referencia clave para modelos estructurales de tópicos y análisis temático informado por covariables."
+    },
+    "links": {
+      "source": "https://doi.org/10.18637/jss.v091.i02"
+    }
+  },
+  {
+    "id": "reference-roder-2015-topic-coherence-measures",
+    "authors": "Röder, M.; Both, A.; Hinneburg, A.",
+    "year": "2015",
+    "title": "Exploring the space of topic coherence measures",
+    "journal": "Proceedings of the Eighth ACM International Conference on Web Search and Data Mining",
+    "categories": ["topic-modeling", "methodology"],
+    "tags": {
+      "en": ["Topic Coherence", "Model Evaluation", "Topic Modeling", "WSDM"],
+      "es": ["Coherencia de tópicos", "Evaluación de modelos", "Modelado de tópicos", "WSDM"]
+    },
+    "apa": "Röder, M., Both, A., & Hinneburg, A. (2015). Exploring the space of topic coherence measures. In Proceedings of the Eighth ACM International Conference on Web Search and Data Mining (pp. 399-408). Association for Computing Machinery. https://doi.org/10.1145/2684822.2685324",
+    "note": {
+      "en": "Important methodological reference for comparing topic-coherence measures.",
+      "es": "Referencia metodológica importante para comparar medidas de coherencia de tópicos."
+    },
+    "links": {
+      "source": "https://doi.org/10.1145/2684822.2685324"
+    }
+  },
+  {
+    "id": "reference-sbalchiero-2020-best-number-topics",
+    "authors": "Sbalchiero, S.; Eder, M.",
+    "year": "2020",
+    "title": "Topic modeling, long texts and the best number of topics. Some problems and solutions",
+    "journal": "Quality & Quantity",
+    "categories": ["topic-modeling", "methodology"],
+    "tags": {
+      "en": ["Long Texts", "Number of Topics", "Topic Modeling", "Methodology"],
+      "es": ["Textos largos", "Número de tópicos", "Modelado de tópicos", "Metodología"]
+    },
+    "apa": "Sbalchiero, S., & Eder, M. (2020). Topic modeling, long texts and the best number of topics. Some problems and solutions. Quality & Quantity, 54(4), 1095-1108. https://doi.org/10.1007/s11135-020-00976-w",
+    "note": {
+      "en": "Useful discussion of topic-number selection and interpretability issues in long-text corpora.",
+      "es": "Discusión útil sobre selección del número de tópicos e interpretabilidad en corpus de textos largos."
+    },
+    "links": {
+      "source": "https://doi.org/10.1007/s11135-020-00976-w"
+    }
+  },
+  {
+    "id": "reference-sievert-2014-ldavis",
+    "authors": "Sievert, C.; Shirley, K. E.",
+    "year": "2014",
+    "title": "LDAvis: A method for visualizing and interpreting topics",
+    "journal": "Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces",
+    "categories": ["topic-modeling", "visualization", "methodology"],
+    "tags": {
+      "en": ["LDAvis", "Visualization", "Topic Interpretation", "Topic Modeling"],
+      "es": ["LDAvis", "Visualización", "Interpretación de tópicos", "Modelado de tópicos"]
+    },
+    "apa": "Sievert, C., & Shirley, K. E. (2014). LDAvis: A method for visualizing and interpreting topics. In Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces (pp. 63-70). Association for Computational Linguistics. https://doi.org/10.3115/v1/W14-3110",
+    "note": {
+      "en": "Key reference for interactive visualization and interpretation of topic-model results.",
+      "es": "Referencia clave para la visualización interactiva e interpretación de resultados de modelos de tópicos."
+    },
+    "links": {
+      "source": "https://doi.org/10.3115/v1/W14-3110"
+    }
+  },
+  {
+    "id": "reference-silge-2017-text-mining-r",
+    "authors": "Silge, J.; Robinson, D.",
+    "year": "2017",
+    "title": "Text mining with R: A tidy approach",
+    "journal": "O'Reilly Media",
+    "categories": ["text-mining", "sentiment-analysis", "topic-modeling", "methodology"],
+    "tags": {
+      "en": ["Text Mining", "R", "Tidy Data", "Applied Methods"],
+      "es": ["Minería de textos", "R", "Datos tidy", "Métodos aplicados"]
+    },
+    "apa": "Silge, J., & Robinson, D. (2017). Text mining with R: A tidy approach. O'Reilly Media.",
+    "note": {
+      "en": "Applied reference for tidy text mining workflows in R.",
+      "es": "Referencia aplicada para flujos de minería de textos en R con enfoque tidy."
+    },
+    "links": {
+      "source": ""
+    }
+  },
+  {
+    "id": "reference-vayansky-2020-topic-modeling-review",
+    "authors": "Vayansky, I.; Kumar, S. A. P.",
+    "year": "2020",
+    "title": "A review of topic modeling methods",
+    "journal": "Information Systems",
+    "categories": ["topic-modeling", "text-mining", "methodology"],
+    "tags": {
+      "en": ["Topic Modeling", "Review", "Methods", "Text Mining"],
+      "es": ["Modelado de tópicos", "Revisión", "Métodos", "Minería de textos"]
+    },
+    "apa": "Vayansky, I., & Kumar, S. A. P. (2020). A review of topic modeling methods. Information Systems, 94, 101582. https://doi.org/10.1016/j.is.2020.101582",
+    "note": {
+      "en": "Review of topic-modeling methods, useful for methodological framing and comparison.",
+      "es": "Revisión de métodos de modelado de tópicos, útil para contextualización y comparación metodológica."
+    },
+    "links": {
+      "source": "https://doi.org/10.1016/j.is.2020.101582"
     }
   }
 ]
