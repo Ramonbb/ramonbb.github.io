@@ -195,7 +195,7 @@ const translations = {
       type: "Type:",
       authors: "Authors / maintainers:",
       version: "Version consulted:",
-      consulted: "Consulted:",
+      published: "Publication date:",
       description: "Brief description:",
       researchUse: "Use in research:",
       officialCran: "Official CRAN page",
@@ -462,7 +462,7 @@ const translations = {
       type: "Tipo:",
       authors: "Autores / mantenedores:",
       version: "Versión consultada:",
-      consulted: "Consultado:",
+      published: "Fecha publicación:",
       description: "Breve explicación:",
       researchUse: "Uso en investigación:",
       officialCran: "Página oficial de CRAN",
@@ -981,7 +981,6 @@ function createResourceCard(resource) {
 
   const topLine = createElement("div", "resource-topline");
   if (resource.type) topLine.append(createElement("p", "resource-type", resource.type));
-  if (resource.consulted) topLine.append(createElement("p", "resource-consulted", resource.consulted));
   if (topLine.children.length) card.append(topLine);
 
   card.append(createElement("h2", "resource-title", resource.packageName || ""));
@@ -989,7 +988,7 @@ function createResourceCard(resource) {
   [
     createResourceMeta("resources.authors", resource.authors),
     createResourceMeta("resources.version", resource.version),
-    createResourceMeta("resources.consulted", resource.consulted)
+    createResourceMeta("resources.published", resource.published)
   ].filter(Boolean).forEach((item) => card.append(item));
 
   const description = getLocalizedResourceValue(resource.description);
@@ -1123,7 +1122,6 @@ function createReferenceCard(reference) {
 
   const topLine = createElement("div", "resource-topline reference-topline");
   if (reference.journal) topLine.append(createElement("p", "resource-type", reference.journal));
-  if (reference.year) topLine.append(createElement("p", "resource-consulted", reference.year));
   if (topLine.children.length) card.append(topLine);
 
   card.append(createElement("h2", "resource-title reference-title", reference.title || ""));

@@ -201,7 +201,7 @@ Recommended fields:
 - `authors`
 - `type`
 - `version`
-- `consulted`
+- `published`
 - `categories`
 - `tags.en`, `tags.es`
 - `description.en`, `description.es`
@@ -217,7 +217,7 @@ Example:
   "authors": "Author One, Author Two",
   "type": "R package",
   "version": "1.0.0",
-  "consulted": "August 2026",
+  "published": "2026-01-01",
   "categories": ["text-mining"],
   "tags": {
     "en": ["Text Mining"],
