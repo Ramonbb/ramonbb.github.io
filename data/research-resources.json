@@ -238,5 +238,29 @@
     "links": {
       "cran": "https://CRAN.R-project.org/package=sentimentr"
     }
+  },
+  {
+    "id": "resource-rselenium",
+    "packageName": "RSelenium",
+    "authors": "John Harrison",
+    "type": "R package",
+    "version": "",
+    "consulted": "August 2026",
+    "categories": ["text-mining", "methodology"],
+    "tags": {
+      "en": ["Web Scraping", "Browser Automation", "Selenium", "Data Collection"],
+      "es": ["Extracción web", "Automatización de navegador", "Selenium", "Recogida de datos"]
+    },
+    "description": {
+      "en": "R package that provides bindings for Selenium WebDriver, allowing browser automation and interaction with dynamic web pages.",
+      "es": "Paquete de R que proporciona conexión con Selenium WebDriver, permitiendo automatizar navegadores e interactuar con páginas web dinámicas."
+    },
+    "researchUse": {
+      "en": "Useful for reproducible web-data collection workflows that support text mining, online-review analysis, and digital tourism research.",
+      "es": "Útil para flujos reproducibles de recogida de datos web que apoyan la minería de textos, el análisis de reseñas en línea y la investigación turística digital."
+    },
+    "links": {
+      "cran": "https://CRAN.R-project.org/package=RSelenium"
+    }
   }
 ]
