@@ -10,13 +10,14 @@ Static bilingual academic website for a university professor and researcher spec
 - `images/profile.jpg` - Replaceable local profile portrait placeholder.
 - `publications.html` - Publication-page structure, filters, empty state, and dynamic list container.
 - `data/publications.json` - Publication database loaded dynamically by `script.js`.
-- `projects.html` - Research projects with descriptions, methods, findings, and related publications.
+- `projects.html` - References / Bibliografía page with filters and a dynamic card list.
+- `data/references.json` - Selected bibliographic-reference database loaded dynamically by `script.js`.
 - `appendices.html` - Research resources page with filters and a dynamic card list.
 - `data/research-resources.json` - Research-resource database for R packages, CRAN links, and methodological notes.
 - `teaching.html` - Teaching areas, course descriptions, objectives, and materials.
 - `contact.html` - Professional profile, academic links, and a frontend-only contact form.
 - `style.css` - Shared responsive design and language-selector styles.
-- `script.js` - English and Spanish translations, language persistence, navigation, filters, abstracts, and form behavior.
+- `script.js` - English and Spanish translations, language persistence, navigation, filters, dynamic publication/resource/reference rendering, abstracts, and form behavior.
 
 ## Bilingual Functionality
 
@@ -143,9 +144,48 @@ The `article` link opens the published article. The optional `results` link may 
 
 Interactive results pages should contain original interactive visualizations, dashboards, tables, or supplementary analyses created by the author. They should not reproduce copyrighted figures or tables from the published article unless permission or license allows it.
 
-## How to Add New Projects
+## How to Add New References
 
-Copy a `.project-card.detailed` block in `projects.html`. Keep the project name unchanged, then add bilingual keys for its description, methods, and findings in `script.js`.
+Do not edit `projects.html` to add individual references. Add a new object to `data/references.json`; the References / Bibliografía page will render it automatically.
+
+Recommended fields:
+
+- `authors`
+- `year`
+- `title`
+- `journal`
+- `categories`
+- `tags.en`, `tags.es`
+- `apa`
+- `note.en`, `note.es`
+- `links.source`
+
+Example:
+
+```json
+{
+  "id": "reference-example",
+  "authors": "Author, A. A.",
+  "year": "2026",
+  "title": "Reference title",
+  "journal": "Journal Name",
+  "categories": ["text-mining", "methodology"],
+  "tags": {
+    "en": ["Text Mining"],
+    "es": ["Minería de textos"]
+  },
+  "apa": "Author, A. A. (2026). Reference title. Journal Name.",
+  "note": {
+    "en": "Brief explanation of why this reference is relevant.",
+    "es": "Breve explicación de por qué esta referencia es relevante."
+  },
+  "links": {
+    "source": "https://example.com"
+  }
+}
+```
+
+Valid categories currently include `tourism`, `marketing`, `service-quality`, `text-mining`, `topic-modeling`, and `methodology`.
 
 ## How to Add New Interactive Appendices
 

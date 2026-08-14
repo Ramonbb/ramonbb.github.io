@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Research projects in tourism and marketing by Ramón Barrera-Barrera.">
-  <title>Projects - Academic Research Portal Ramón Barrera-Barrera</title>
+  <meta name="description" content="Selected references used in research on tourism, marketing, text mining, and topic modeling.">
+  <title>References - Academic Research Portal Ramón Barrera-Barrera</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:wght@600;700&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
       <ul class="nav-links">
         <li><a href="index.html" data-i18n="nav.home">Home</a></li>
         <li><a href="publications.html" data-i18n="nav.publications">Publications</a></li>
-        <li><a class="active" href="projects.html" data-i18n="nav.projects">Projects</a></li>
+        <li><a class="active" href="projects.html" data-i18n="nav.projects">References</a></li>
         <li><a href="appendices.html" data-i18n="nav.researchResources">Research Resources</a></li>
       </ul>
       <div class="nav-actions">
@@ -31,10 +31,32 @@
   </header>
 
   <main>
-    <section class="page-hero construction-page">
+    <section class="page-hero">
       <div class="container">
-        <h1 data-i18n="construction.title">Website under construction</h1>
-        <p data-i18n="construction.message">This section is currently being prepared and will be available soon.</p>
+        <h1 data-i18n="references.title">References</h1>
+        <p data-i18n="references.intro">A curated bibliography of key works used in research on tourism, marketing, service quality, text mining, and topic modeling.</p>
+      </div>
+    </section>
+
+    <section class="section references-section">
+      <div class="container">
+        <div class="publication-controls reference-controls">
+          <div class="filter-toolbar" aria-label="Reference filters" data-i18n-aria-label="aria.referenceFilters">
+            <button class="filter-button active" data-reference-filter="all" type="button" data-i18n="filters.all">All</button>
+            <button class="filter-button" data-reference-filter="tourism" type="button" data-i18n="filters.tourism">Tourism</button>
+            <button class="filter-button" data-reference-filter="marketing" type="button" data-i18n="filters.marketing">Marketing</button>
+            <button class="filter-button" data-reference-filter="service-quality" type="button" data-i18n="filters.serviceQuality">Service Quality</button>
+            <button class="filter-button" data-reference-filter="text-mining" type="button" data-i18n="filters.textMining">Text Mining</button>
+            <button class="filter-button" data-reference-filter="topic-modeling" type="button" data-i18n="filters.topicModeling">Topic Modeling</button>
+            <button class="filter-button" data-reference-filter="methodology" type="button" data-i18n="filters.methodology">Methodology</button>
+          </div>
+        </div>
+
+        <div class="resource-list reference-list" id="reference-list"></div>
+        <div class="empty-state" id="references-empty" hidden>
+          <h2 data-i18n="references.emptyTitle">References will be added soon</h2>
+          <p data-i18n="references.emptyText">This section will include selected bibliographic references and links to official sources.</p>
+        </div>
       </div>
     </section>
   </main>

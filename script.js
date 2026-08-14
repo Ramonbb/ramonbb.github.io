@@ -5,7 +5,7 @@ const translations = {
     nav: {
       home: "Home",
       publications: "Publications",
-      projects: "Projects",
+      projects: "References",
       researchResources: "Research Resources",
       about: "About"
     },
@@ -23,6 +23,7 @@ const translations = {
       publicationFilters: "Publication filters",
       publicationSort: "Sort publications by year",
       resourceFilters: "Research resource filters",
+      referenceFilters: "Reference filters",
       githubPlaceholder: "GitHub profile placeholder",
       scholarPlaceholder: "Google Scholar profile placeholder",
       orcidPlaceholder: "ORCID profile placeholder"
@@ -64,7 +65,8 @@ const translations = {
       serviceQuality: "Service Quality",
       topicModeling: "Topic Modeling",
       sentimentAnalysis: "Sentiment Analysis",
-      visualization: "Visualization"
+      visualization: "Visualization",
+      methodology: "Methodology"
     },
     home: {
       eyebrow: "University Professor and Researcher",
@@ -203,6 +205,21 @@ const translations = {
       noFilterText: "Choose another category or select All to view the complete resource list.",
       topics: "Resource topics"
     },
+    references: {
+      title: "References",
+      intro: "A curated bibliography of key works used in research on tourism, marketing, service quality, text mining, and topic modeling.",
+      authors: "Authors:",
+      year: "Year:",
+      journal: "Journal:",
+      citation: "APA reference:",
+      note: "Research relevance:",
+      viewSource: "View source",
+      topics: "Reference topics",
+      emptyTitle: "References will be added soon",
+      emptyText: "This section will include selected bibliographic references and links to official sources.",
+      noFilterTitle: "No references match this filter",
+      noFilterText: "Choose another category or select All to view the complete bibliography."
+    },
     teaching: {
       eyebrow: "Academic Teaching",
       title: "Teaching",
@@ -255,7 +272,7 @@ const translations = {
     nav: {
       home: "Inicio",
       publications: "Publicaciones",
-      projects: "Proyectos",
+      projects: "Bibliografía",
       researchResources: "Recursos de investigación",
       about: "Sobre mí"
     },
@@ -273,6 +290,7 @@ const translations = {
       publicationFilters: "Filtros de publicaciones",
       publicationSort: "Ordenar publicaciones por año",
       resourceFilters: "Filtros de recursos de investigación",
+      referenceFilters: "Filtros de bibliografía",
       githubPlaceholder: "Marcador del perfil de GitHub",
       scholarPlaceholder: "Marcador del perfil de Google Scholar",
       orcidPlaceholder: "Marcador del perfil de ORCID"
@@ -314,7 +332,8 @@ const translations = {
       serviceQuality: "Calidad del servicio",
       topicModeling: "Modelado de tópicos",
       sentimentAnalysis: "Análisis de sentimientos",
-      visualization: "Visualización"
+      visualization: "Visualización",
+      methodology: "Metodología"
     },
     home: {
       eyebrow: "Profesor Universitario e Investigador",
@@ -453,6 +472,21 @@ const translations = {
       noFilterText: "Seleccione otra categoría o elija Todas para ver la lista completa de recursos.",
       topics: "Temas del recurso"
     },
+    references: {
+      title: "Bibliografía",
+      intro: "Bibliografía seleccionada con trabajos clave utilizados en la investigación sobre turismo, marketing, calidad del servicio, minería de textos y modelado de tópicos.",
+      authors: "Autores:",
+      year: "Año:",
+      journal: "Revista:",
+      citation: "Referencia APA:",
+      note: "Relevancia para la investigación:",
+      viewSource: "Ver fuente",
+      topics: "Temas de la referencia",
+      emptyTitle: "La bibliografía se añadirá próximamente",
+      emptyText: "Esta sección incluirá referencias bibliográficas seleccionadas y enlaces a fuentes oficiales.",
+      noFilterTitle: "No hay referencias que coincidan con este filtro",
+      noFilterText: "Seleccione otra categoría o elija Todas para ver la bibliografía completa."
+    },
     teaching: {
       eyebrow: "Docencia Universitaria",
       title: "Docencia",
@@ -525,12 +559,12 @@ const pageMetadata = {
   },
   projects: {
     en: {
-      title: "Projects - Academic Research Portal Ramón Barrera-Barrera",
-      description: "Research projects in tourism and marketing by Ramón Barrera-Barrera."
+      title: "References - Academic Research Portal Ramón Barrera-Barrera",
+      description: "Selected references used in research on tourism, marketing, text mining, and topic modeling."
     },
     es: {
-      title: "Proyectos - Portal Académico de Investigación Ramón Barrera-Barrera",
-      description: "Proyectos de investigación en turismo y marketing de Ramón Barrera-Barrera."
+      title: "Bibliografía - Portal Académico de Investigación Ramón Barrera-Barrera",
+      description: "Referencias seleccionadas utilizadas en investigación sobre turismo, marketing, minería de textos y modelado de tópicos."
     }
   },
   appendices: {
@@ -573,6 +607,9 @@ let publicationsLoaded = false;
 let researchResourcesData = [];
 let activeResourceFilter = "all";
 let researchResourcesLoaded = false;
+let referencesData = [];
+let activeReferenceFilter = "all";
+let referencesLoaded = false;
 
 function getTranslation(language, key) {
   return key.split(".").reduce((value, part) => value?.[part], translations[language]);
@@ -1062,6 +1099,149 @@ async function loadResearchResources() {
   renderResearchResources();
 }
 
+function getLocalizedReferenceValue(value) {
+  if (!value || typeof value !== "object") return "";
+  return value[currentLanguage] || value.en || value.es || "";
+}
+
+function createReferenceMeta(labelKey, value) {
+  if (!value) return null;
+  const item = createElement("p", "resource-meta-row reference-meta-row");
+  item.append(
+    createElement("strong", "", getTranslation(currentLanguage, labelKey)),
+    document.createTextNode(` ${value}`)
+  );
+  return item;
+}
+
+function createReferenceCard(reference) {
+  const card = createElement("article", "resource-card reference-card detailed");
+  card.dataset.category = Array.isArray(reference.categories)
+    ? reference.categories.join(" ")
+    : "";
+  if (reference.id) card.id = reference.id;
+
+  const topLine = createElement("div", "resource-topline reference-topline");
+  if (reference.journal) topLine.append(createElement("p", "resource-type", reference.journal));
+  if (reference.year) topLine.append(createElement("p", "resource-consulted", reference.year));
+  if (topLine.children.length) card.append(topLine);
+
+  card.append(createElement("h2", "resource-title reference-title", reference.title || ""));
+
+  [
+    createReferenceMeta("references.authors", reference.authors),
+    createReferenceMeta("references.year", reference.year),
+    createReferenceMeta("references.journal", reference.journal)
+  ].filter(Boolean).forEach((item) => card.append(item));
+
+  if (reference.apa) {
+    const citation = createElement("p", "resource-description reference-citation");
+    citation.append(
+      createElement("strong", "", getTranslation(currentLanguage, "references.citation")),
+      document.createTextNode(` ${reference.apa}`)
+    );
+    card.append(citation);
+  }
+
+  const note = getLocalizedReferenceValue(reference.note);
+  if (note) {
+    const text = createElement("p", "resource-description");
+    text.append(
+      createElement("strong", "", getTranslation(currentLanguage, "references.note")),
+      document.createTextNode(` ${note}`)
+    );
+    card.append(text);
+  }
+
+  const tags = getLocalizedReferenceValue(reference.tags);
+  if (Array.isArray(tags) && tags.length) {
+    const tagList = createElement("div", "publication-tags resource-tags reference-tags");
+    tagList.setAttribute("aria-label", getTranslation(currentLanguage, "references.topics"));
+    tags.forEach((tag) => tagList.append(createElement("span", "", tag)));
+    card.append(tagList);
+  }
+
+  const sourceUrl = reference.links?.source;
+  if (sourceUrl) {
+    const actions = createElement("div", "card-actions resource-actions");
+    const link = createElement("a", "button small primary", getTranslation(currentLanguage, "references.viewSource"));
+    link.href = sourceUrl;
+    if (/^https?:\/\//i.test(sourceUrl)) {
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+    }
+    actions.append(link);
+    card.append(actions);
+  }
+
+  return card;
+}
+
+function updateReferencesEmptyState(noFilterMatches = false) {
+  const emptyState = document.getElementById("references-empty");
+  if (!emptyState) return;
+
+  const title = emptyState.querySelector("h2");
+  const text = emptyState.querySelector("p");
+  const titleKey = noFilterMatches ? "references.noFilterTitle" : "references.emptyTitle";
+  const textKey = noFilterMatches ? "references.noFilterText" : "references.emptyText";
+  title.dataset.i18n = titleKey;
+  text.dataset.i18n = textKey;
+  title.textContent = getTranslation(currentLanguage, titleKey);
+  text.textContent = getTranslation(currentLanguage, textKey);
+  emptyState.hidden = false;
+}
+
+function renderReferences() {
+  const list = document.getElementById("reference-list");
+  const emptyState = document.getElementById("references-empty");
+  if (!list || !emptyState || !referencesLoaded) return;
+
+  list.replaceChildren();
+  emptyState.hidden = true;
+
+  if (!referencesData.length) {
+    updateReferencesEmptyState(false);
+    return;
+  }
+
+  const filteredReferences = activeReferenceFilter === "all"
+    ? referencesData
+    : referencesData.filter((reference) =>
+        Array.isArray(reference.categories) &&
+        reference.categories.includes(activeReferenceFilter)
+      );
+
+  if (!filteredReferences.length) {
+    updateReferencesEmptyState(true);
+    return;
+  }
+
+  filteredReferences.forEach((reference) => {
+    list.append(createReferenceCard(reference));
+  });
+}
+
+async function loadReferences() {
+  if (!document.getElementById("reference-list")) return;
+
+  try {
+    const response = await fetch(`data/references.json?v=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const data = await response.json();
+    referencesData = Array.isArray(data) ? data : [];
+    if (!Array.isArray(data)) {
+      console.warn("Reference data must be a JSON array. Showing the empty state.");
+    }
+  } catch (error) {
+    referencesData = [];
+    console.warn("Could not load data/references.json. Showing the empty state.", error);
+  }
+
+  referencesLoaded = true;
+  renderReferences();
+}
+
 function applyLanguage(language) {
   currentLanguage = translations[language] ? language : "en";
   document.documentElement.lang = currentLanguage;
@@ -1111,6 +1291,7 @@ function applyLanguage(language) {
 
   renderPublications();
   renderResearchResources();
+  renderReferences();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -1138,7 +1319,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const filterButtons = document.querySelectorAll(".filter-button");
   filterButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      if (button.dataset.resourceFilter) return;
+      if (button.dataset.resourceFilter || button.dataset.referenceFilter) return;
       activePublicationFilter = button.dataset.filter;
       filterButtons.forEach((item) => item.classList.remove("active"));
       button.classList.add("active");
@@ -1153,6 +1334,16 @@ document.addEventListener("DOMContentLoaded", () => {
       resourceFilterButtons.forEach((item) => item.classList.remove("active"));
       button.classList.add("active");
       renderResearchResources();
+    });
+  });
+
+  const referenceFilterButtons = document.querySelectorAll("[data-reference-filter]");
+  referenceFilterButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      activeReferenceFilter = button.dataset.referenceFilter;
+      referenceFilterButtons.forEach((item) => item.classList.remove("active"));
+      button.classList.add("active");
+      renderReferences();
     });
   });
 
@@ -1202,6 +1393,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   loadPublications();
   loadResearchResources();
+  loadReferences();
 
   const contactForm = document.getElementById("contact-form");
   if (contactForm) {
