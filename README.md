@@ -4,8 +4,7 @@ Static bilingual academic website for a university professor and researcher spec
 
 ## Website Structure
 
-- `index.html` - Temporary development landing page.
-- `index-full.html` - Full bilingual academic homepage preview.
+- `index.html` - Full bilingual academic homepage preview.
 - `images/hero.jpg` - Local full-width homepage hero background.
 - `images/profile.jpg` - Replaceable local profile portrait placeholder.
 - `publications.html` - Publication-page structure, filters, empty state, and dynamic list container.
